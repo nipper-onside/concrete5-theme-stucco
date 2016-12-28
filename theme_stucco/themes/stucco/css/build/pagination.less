@@ -1,0 +1,122 @@
+div.ccm-pagination-wrapper {
+	margin: 50px 0 0;
+	text-align: center;
+
+
+	.pagination {
+		margin: 0 auto;
+		border: none;
+		border-radius: 0;
+		> li {
+			display: inline-block;
+			margin: 0 5px;
+			font-size: 14px;
+	    	&.active {
+				span {
+					color: @global-navigation-text-link-selected-color;
+					border: none;
+					border-radius: 50px;
+					background: @global-navigation-background-link-selected-color;
+					&:hover {
+						color: @global-navigation-text-link-selected-color;
+						background: @global-navigation-background-link-selected-color;
+					}
+				}
+			}
+			&.next {
+				&.disabled {
+					a,
+					span {
+						color: @footer-line-color;
+						&:hover {
+							color: @footer-line-color;
+						}
+					}
+				}
+
+				a,
+				span {
+					color: @body-link-color;
+					border: none;
+					border-radius:0;
+					background: none;
+					&:hover {
+						color: @global-navigation-background-link-selected-color;
+						background: none;
+					}
+					&:after {
+						width: 1.2em;
+						font-family: "FontAwesome", sans-serif;
+						font-size: 1.4em;
+						font-style: normal;
+						font-weight: normal;
+						font-variant: normal;
+						line-height: 1;
+						background: #fff;
+						content: "\f138";
+						position: absolute;
+						top: .4em;
+						right: 6px;
+					}
+				}
+
+			}
+			&.prev {
+				&.disabled {
+					a,
+					span {
+						color: @footer-line-color;
+						&:hover {
+							color: @footer-line-color;
+						}
+					}
+				}
+
+				a,
+				span {
+					color: @body-link-color;
+					border: none;
+					border-radius:0;
+					background: none;
+					&:hover {
+						color: @global-navigation-background-link-selected-color;
+						background: none;
+					}
+					&:before {
+						width: 1.2em;
+						font-family: "FontAwesome", sans-serif;
+						font-size: 1.4em;
+						font-style: normal;
+						font-weight: normal;
+						font-variant: normal;
+						line-height: 1;
+						background: #fff;
+						content: "\f137";
+						position: absolute;
+						top: .4em;
+						left: 6px;
+					}
+				}
+			}
+			> a {
+				color: @global-navigation-text-link-selected-color;
+				/* font-size: 14px; */
+				border: none;
+				border-radius: 50px;
+				background-color: @body-link-color;
+				&:hover {
+					color: @global-navigation-text-link-selected-color;
+					background-color: @body-link-hover-color;
+				}
+			}
+			> span {
+				color: @global-navigation-text-link-hover-color;
+				border-left: 0;
+				border-right: 0;
+				border: none;
+				border-radius: 50px;
+				background-color: @page-border-color;
+			}
+		}
+	}
+}

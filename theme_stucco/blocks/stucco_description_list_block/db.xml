@@ -1,0 +1,12 @@
+<?php xml version="1.0"?>
+<schema version="0.3">
+    <table name="btStuccoDefinitionListBlock">
+        <field name="bID" type="I">
+            <key/>
+            <unsigned/>
+        </field>
+        <field name="DefinitionTerm" type="X2"></field>
+        <field name="DefinitionDescription" type="X2"></field>
+        <field name="LastBlock" type="C"></field>
+    </table>
+</schema>

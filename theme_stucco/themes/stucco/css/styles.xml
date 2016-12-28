@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<styles version="1.0">
+	<set name="Full Page">
+		<style name="Page Background" variable="page-background" type="color" />
+		<style name="Page Main Background" variable="page-main-background" type="color" />
+		<style name="Page Content Background" variable="page-content-background" type="color" />
+		<style name="Page HR Color" variable="page-content-hr" type="color" />
+		<style name="Page Border Color" variable="page-border" type="color" />
+		<style name="Text" variable="body" type="type" />
+		<style name="Site Title" variable="header-site-title" type="type" />
+		<style name="Page Title" variable="page-title" type="type" />
+		<style name="Page Heading Types Color" variable="page-heading-types" type="color" />
+		<style name="Link Hover" variable="body-link-hover" type="color" />
+		<style name="Link Active" variable="body-link-active" type="color" />
+	</set>
+	<set name="Header">
+		<style name="Header Background" variable="header-background" type="color" />
+		<style name="Search Field Button Color" variable="header-search-button" type="color" />
+        <style name="Search Field Border Color" variable="header-search-input-border" type="color" />
+        <style name="Search Field Background Color" variable="header-search-input-background" type="color" />
+        <style name="Navigation" variable="header-navigation" type="type" />
+        <style name="Navigation Hover" variable="header-navigation-hover" type="color" />
+        <style name="Navigation Menu Background" variable="header-navigation-menu-background" type="color" />
+        <style name="Navigation Menu Background Hover" variable="header-navigation-menu-background-hover" type="color" />
+        <style name="Navigation Menu Border" variable="header-navigation-menu-border" type="color" />
+        <style name="Navigation Menu Text" variable="header-navigation-menu-text" type="color" />
+        <style name="Navigation Menu Text Hover" variable="header-navigation-menu-text-hover" type="color" />
+	</set>
+	<set name="Headings">
+		<style name="Heading 1" variable="h1" type="type" />
+		<style name="Heading 2" variable="h2" type="type" />
+		<style name="Heading 3" variable="h3" type="type" />
+		<style name="Heading 4" variable="h4" type="type" />
+		<style name="Heading 5" variable="h5" type="type" />
+		<style name="Heading 6" variable="h6" type="type" />
+		<style name="Heading Color" variable="headings" type="color" />
+	</set>
+	<set name="Global Navigation">
+		<style name="Global Navi Background Color" variable="global-navigation-background" type="color" />
+		<style name="Global Navi Background Link Color" variable="global-navigation-background-link" type="color" />
+		<style name="Global Navi Text Link Color" variable="global-navigation-text-link" type="color" />
+		<style name="Global Navi Background Link Hover" variable="global-navigation-background-link-hover" type="color" />
+		<style name="Global Navi Text Link Hover" variable="global-navigation-text-link-hover" type="color" />
+		<style name="Global Navi Background Link Selected" variable="global-navigation-background-link-selected" type="color" />
+		<style name="Global Navi Text Link Selected" variable="global-navigation-text-link-selected" type="color" />
+		<style name="Global Navi Child Background Link" variable="global-navigation-child-background-link" type="color" />
+		<style name="Global Navi Child Background Link Selected" variable="global-navigation-child-background-link-selected" type="color" />
+	</set>
+	<set name="Blockquote">
+        <style name="Text" variable="blockquote" type="type" />
+        <style name="Left Padding" variable="blockquote-left-padding" type="size" />
+        <style name="Right Padding" variable="blockquote-right-padding" type="size" />
+        <style name="Mark Color" variable="blockquote-mark" type="color" />
+    </set>
+    <set name="Image Slider">
+        <style name="Title" variable="image-slider-title" type="type" />
+        <style name="Paragraph" variable="image-slider-paragraph" type="type" />
+		<style name="Navigation" variable="image-slider-navigation" type="color" />
+		<style name="Navigation Background" variable="image-slider-navigation-background" type="color" />
+        <style name="Navigation Tab" variable="image-slider-navigation-tab" type="color" />
+        <style name="Hover Navigation Tab" variable="image-slider-navigation-tab-hover" type="color" />
+        <style name="Active Navigation Tab" variable="image-slider-navigation-tab-active" type="color" />
+    </set>
+	<set name="Footer">
+		<style name="Footer Background" variable="footer-background" type="color" />
+		<style name="Footer Text Color" variable="footer-text" type="color" />
+		<style name="Footer Line Color" variable="footer-line" type="color" />
+		<style name="Footer Background Hover Color" variable="footer-background-hover" type="color" />
+		<style name="Social Button Background Color" variable="social-button-background" type="color" />
+		<style name="Social Button Background Hover" variable="social-button-background-hover" type="color" />
+		<style name="Social Button Icon Color" variable="social-button-icon" type="color" />
+		<style name="Social Button Icon Color Hover" variable="social-button-icon-hover" type="color" />
+	</set>
+	<set name="Home Background">
+		<style name="Home Upper Background" variable="home-upper-background" type="color" />
+		<style name="Home Middle Background" variable="home-middle-background" type="color" />
+		<style name="Home Lower Background" variable="home-lower-background" type="color" />
+	</set>
+	<set name="Miscellaneous">
+		<style name="Title Bold" variable="title-bold" type="type" />
+		<style name="Title Thin" variable="title-thin" type="type" />
+		<style name="Title Caps" variable="title-caps" type="type" />
+		<style name="Icon Background Color" variable="icon-background" type="color" />
+		<style name="Icon Background Hover" variable="icon-background-hover" type="color" />
+		<style name="Icon Color" variable="icon" type="color" />
+		<style name="Icon Color Hover" variable="icon-hover" type="color" />
+		<style name="Definition Term" variable="definition-term" type="size" />
+	</set>
+</styles>

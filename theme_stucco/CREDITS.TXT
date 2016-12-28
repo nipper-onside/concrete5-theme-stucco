@@ -1,0 +1,79 @@
+Credits:
+
+jQuery Easing by George McGinley Smith
+http://gsgd.co.uk/sandbox/jquery/easing/
+License: Open source under the BSD License
+
+EASING EQUATIONS by Robert Penner
+License: Open source under the BSD License
+
+Modernizr by Faruk Ates, Paul Irish, Alex Sexton, Ryan Seddon, Patrick Kettner, Stu Cox, Richard Herrera
+http://modernizr.com/download?--dontmin
+License: MIT license
+
+Animenu by Catalin Rosu
+http://red-team-design.com/animenu-a-responsive-dropdown-navigation-made-with-sass/
+License: Public domain <http://unlicense.org/>
+
+
+Photos of the sample content
+Unsplash | High-Resolution Photos
+https://unsplash.com/
+
+UNSPLASH LICENSE
+All photos published on Unsplash are licensed under Creative Commons Zero which means you can copy, modify, distribute and use the photos for free, including commercial purposes, without asking permission from or providing attribution to the photographer or Unsplash.
+
+home:
+https://unsplash.com/photos/OAVRFaEo8qE
+https://unsplash.com/photos/P3ek4SMx_kc
+https://unsplash.com/photos/buF62ewDLcQ
+https://unsplash.com/photos/D62hQefhteg
+https://unsplash.com/photos/YIN4xUBaqnk
+https://unsplash.com/photos/k0SwnevO_wk
+
+about:
+https://unsplash.com/photos/MZx2uowz-o0
+https://unsplash.com/photos/DEdM9Vs6s8w
+
+careers:
+https://unsplash.com/photos/7dwwcdv7wc4
+
+blog:
+https://unsplash.com/photos/a9nu_KeLdm8
+
+
+Free stock photos · Pexels
+https://www.pexels.com/
+
+Photo License
+It's hard to understand complex licenses that is why all photos on Pexels are licensed under the Creative Commons Zero (CC0) license. This means the pictures are completely free to be used for any legal purpose.
+
+The pictures are free for personal and even for commercial use.
+You can modify, copy and distribute the photos.
+All without asking for permission or setting a link to the source. So that attribution is not required.
+The CC0 license was released by the non-profit organization Creative Commons (CC). Get more information about the license on the official license page.
+
+elemental:
+https://www.pexels.com/photo/ocean-boat-evening-dusk-7335/
+https://www.pexels.com/photo/mountain-fog-ski-lift-ski-resort-4113/
+https://www.pexels.com/photo/sea-beach-boat-grass-5023/
+
+portfolio:
+https://www.pexels.com/photo/coffee-time-sentence-cup-of-coffee-and-chemex-6659/
+https://www.pexels.com/photo/kitchen-jar-with-mustache-6246/
+https://www.pexels.com/photo/street-view-of-a-coffee-terrace-with-tables-and-chairs-6458/
+
+https://www.pexels.com/photo/detail-of-colorful-design-bench-6462/
+https://www.pexels.com/photo/wood-architect-table-work-3855/
+https://www.pexels.com/photo/camera-photo-old-camera-zenith-9631/
+https://www.pexels.com/photo/wood-light-bike-tire-8348/
+https://www.pexels.com/photo/coffee-magazine-6067/
+https://www.pexels.com/photo/wooden-decorations-5873/
+
+team:
+https-//www.pexels.com/photo/man-office-writing-workspace-7077/
+https://www.pexels.com/photo/man-person-hand-lens-1338/
+
+blog:
+https://www.pexels.com/photo/drink-breakfast-orange-juice-3642/
+https://www.pexels.com/photo/meadow-flower-poppy-wild-poppies-3795/

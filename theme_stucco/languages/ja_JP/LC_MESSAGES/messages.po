@@ -1,0 +1,313 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Theme Stucco\n"
+"POT-Creation-Date: 2016-02-12 10:37+0900\n"
+"PO-Revision-Date: 2016-02-12 10:37+0900\n"
+"Last-Translator: \n"
+"Language-Team: nipper.onside@gmail.com\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;t\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SearchPath-0: ../../..\n"
+
+#: ../../../blocks/autonav/templates/stucco_bread_crumbs/view.php:26
+#: ../../../blocks/autonav/templates/stucco_footer_nav/view.php:135
+#: ../../../blocks/autonav/templates/stucco_global_nav_animenu/view.php:159
+msgid "Empty Auto-Nav Block."
+msgstr "空のオートナビブロックです。"
+
+#: ../../../blocks/faq/templates/stucco_faq/view.php:23
+#: ../../../blocks/faq/templates/stucco_q&a/view.php:24
+msgid "No Faq Entries Entered."
+msgstr "FAQ のエントリーが入力されていません。"
+
+#: ../../../blocks/form/templates/stucco_simple_form/view.php:104
+#: ../../../blocks/stucco_description_list_block/form.php:10
+#: ../../../blocks/stucco_description_list_block/form.php:33
+#: ../../../blocks/stucco_description_list_block/form.php:56
+#: ../../../blocks/stucco_heading/form.php:5
+#: ../../../blocks/stucco_heading/form.php:14
+#: ../../../blocks/stucco_heading/form.php:29
+msgid "Required"
+msgstr "必須"
+
+#: ../../../blocks/page_list/templates/stucco_news_list/view.php:9
+#: ../../../blocks/page_list/templates/stucco_thumbnail_grid/view.php:86
+msgid "Empty Page List Block."
+msgstr "空のページリストブロックです。"
+
+#: ../../../blocks/page_list/templates/stucco_news_list/view.php:53
+msgid "F d, Y"
+msgstr "Y年n月j日"
+
+#: ../../../blocks/page_list/templates/stucco_news_list/view.php:76
+msgid "No announcements to this news."
+msgstr "このニュースにお知らせはありません。"
+
+#: ../../../blocks/search/templates/stucco_header_search/view.php:35
+msgid "There were no results found. Please try another keyword or phrase."
+msgstr ""
+"検索語句に一致するページは見つかりませんでした。他のキーワードを入力してみて"
+"ください。"
+
+#: ../../../blocks/stucco_anchor_block/controller.php:14
+msgid "Set an anchor point to jump to specific point on this page."
+msgstr ""
+"このページの特定のポイントにジャンプするためのアンカー ポイントを設定します。"
+
+#: ../../../blocks/stucco_anchor_block/controller.php:19
+msgid "Link anchor point"
+msgstr "リンクアンカーポイント"
+
+#: ../../../blocks/stucco_anchor_block/view.php:8
+#, php-format
+msgid "This is an anchor point (ID: anchor-%s)"
+msgstr "これはアンカー ポイントです。 (ID: anchor-%s)"
+
+#: ../../../blocks/stucco_description_list_block/controller.php:35
+msgid "Add a description list."
+msgstr "記述リストを追加します。"
+
+#: ../../../blocks/stucco_description_list_block/controller.php:40
+msgid "Description List"
+msgstr "記述リスト"
+
+#: ../../../blocks/stucco_description_list_block/controller.php:86
+#: ../../../blocks/stucco_description_list_block/form.php:9
+msgid "Term"
+msgstr "ターム"
+
+#: ../../../blocks/stucco_description_list_block/controller.php:86
+#: ../../../blocks/stucco_description_list_block/controller.php:89
+#: ../../../blocks/stucco_heading/controller.php:58
+#, php-format
+msgid "The %s field is required."
+msgstr "%sフィールドは必須です。"
+
+#: ../../../blocks/stucco_description_list_block/controller.php:89
+#: ../../../blocks/stucco_description_list_block/form.php:32
+msgid "Description"
+msgstr "説明"
+
+#: ../../../blocks/stucco_description_list_block/controller.php:93
+msgid "Last Item"
+msgstr "最後の項目"
+
+#: ../../../blocks/stucco_description_list_block/controller.php:93
+#: ../../../blocks/stucco_heading/controller.php:62
+#: ../../../blocks/stucco_heading/controller.php:67
+#, php-format
+msgid "The %s field has an invalid value."
+msgstr "%s フィールドには、無効な値があります。"
+
+#: ../../../blocks/stucco_description_list_block/form.php:55
+msgid "Is this a last item of description list group?"
+msgstr "これは記述リストグループの最後の項目ですか?"
+
+#: ../../../blocks/stucco_description_list_block/form.php:58
+msgid "No"
+msgstr "いいえ"
+
+#: ../../../blocks/stucco_description_list_block/form.php:59
+msgid "Yes"
+msgstr "はい"
+
+#: ../../../blocks/stucco_heading/controller.php:29
+msgid "Displays a heading with style options."
+msgstr "スタイルのオプションで見出しを表示します。"
+
+#: ../../../blocks/stucco_heading/controller.php:34
+msgid "Advanced Heading"
+msgstr "詳細な見出し"
+
+#: ../../../blocks/stucco_heading/controller.php:58
+#: ../../../blocks/stucco_heading/form.php:4
+msgid "Heading Text"
+msgstr "見出しのテキスト"
+
+#: ../../../blocks/stucco_heading/controller.php:62
+#: ../../../blocks/stucco_heading/form.php:13
+msgid "Formatting"
+msgstr "フォーマット"
+
+#: ../../../blocks/stucco_heading/controller.php:67
+#: ../../../blocks/stucco_heading/form.php:28
+msgid "Style Option"
+msgstr "スタイルオプション"
+
+#: ../../../blocks/stucco_heading/form.php:16
+#: ../../../blocks/stucco_heading/form.php:31
+msgid "-- None --"
+msgstr "-- なし --"
+
+#: ../../../blocks/stucco_heading/form.php:17
+msgid "H1"
+msgstr "H1"
+
+#: ../../../blocks/stucco_heading/form.php:18
+msgid "H2"
+msgstr "H2"
+
+#: ../../../blocks/stucco_heading/form.php:19
+msgid "H3"
+msgstr "H3"
+
+#: ../../../blocks/stucco_heading/form.php:20
+msgid "H4"
+msgstr "H4"
+
+#: ../../../blocks/stucco_heading/form.php:21
+msgid "H5"
+msgstr "H5"
+
+#: ../../../blocks/stucco_heading/form.php:22
+msgid "H6"
+msgstr "H6"
+
+#: ../../../blocks/stucco_heading/form.php:32
+msgid "Left Border"
+msgstr "縦罫線"
+
+#: ../../../blocks/stucco_heading/form.php:33
+msgid "Double Lines"
+msgstr "ダブルライン"
+
+#: ../../../blocks/stucco_heading/form.php:34
+msgid "Under Line"
+msgstr "アンダーライン"
+
+#: ../../../blocks/stucco_heading/form.php:35
+msgid "Dotted Under Line"
+msgstr "ドット・アンダーライン"
+
+#: ../../../blocks/topic_list/templates/stucco_flat_filter.php:10
+msgid "All"
+msgstr "すべて"
+
+#: ../../../controller.php:12 ../../../elements/dashboard/install.php:1
+msgid "Access Denied."
+msgstr "アクセスできません。"
+
+#: ../../../controller.php:24
+msgid "A simple style business theme based on the Bootstrap framework."
+msgstr "ブートストラップを使用したシンプルなビジネステーマ。"
+
+#: ../../../controller.php:29
+msgid "Stucco"
+msgstr "Stucco"
+
+#: ../../../elements/dashboard/install.php:4
+msgid ""
+"<strong>Attention!</strong> Clearing your site's content prior to installing "
+"this theme is highly recommended."
+msgstr ""
+"<strong>注意!</strong>このテーマをインストールする前に、サイトのコンテンツを"
+"クリアすることをお勧めします。"
+
+#: ../../../themes/stucco/home.php:39
+msgid ""
+"Built with <a href=\"http://www.concrete5.org\" class="
+"\"concrete5\">concrete5</a> CMS."
+msgstr ""
+"Built with <a href=\"http://www.concrete5.org\" class="
+"\"concrete5\">concrete5</a> CMS."
+
+#: ../../../themes/stucco/home.php:45
+msgid "Log in"
+msgstr "ログイン"
+
+#: ../../../themes/stucco/home.php:54
+msgid "Log out"
+msgstr "ログアウト"
+
+#: ../../../themes/stucco/inc/footer.php:32
+msgid "Back to Top"
+msgstr "ページの先頭へ"
+
+#: ../../../themes/stucco/inc/header_top.php:21
+msgid ""
+"You are using an <strong>outdated</strong> browser. Please <a href=\"http://"
+"browsehappy.com/\">upgrade your browser</a> to improve your experience."
+msgstr ""
+"You are using an <strong>outdated</strong> browser. Please <a href=\"http://"
+"browsehappy.com/\">upgrade your browser</a> to improve your experience."
+
+#: ../../../themes/stucco/inc/header_top.php:24
+msgid "Skip to content"
+msgstr "コンテンツへ移動"
+
+#: ../../../themes/stucco/page_forbidden.php:12
+msgid "403 Error"
+msgstr "403エラー"
+
+#: ../../../themes/stucco/page_forbidden.php:13
+msgid "You are not allowed to access this page."
+msgstr "このページへのアクセス権がありません。"
+
+#: ../../../themes/stucco/page_not_found.php:12
+msgid "404 Error"
+msgstr "404エラー"
+
+#: ../../../themes/stucco/page_not_found.php:13
+msgid "Page not found, so please search."
+msgstr "ページが見つかりません、検索してみてください。"
+
+#: ../../../themes/stucco/page_not_found.php:17
+#: ../../../themes/stucco/page_not_found.php:18
+msgid "Search"
+msgstr "検索"
+
+#: ../../../themes/stucco/page_theme.php:113
+msgid "Title Thin"
+msgstr "細いタイトル"
+
+#: ../../../themes/stucco/page_theme.php:118
+msgid "Title Bold"
+msgstr "タイトル 太字"
+
+#: ../../../themes/stucco/page_theme.php:123
+msgid "Title Caps"
+msgstr "大文字タイトル"
+
+#: ../../../themes/stucco/page_theme.php:128
+msgid "Headline"
+msgstr "大見出し"
+
+#: ../../../themes/stucco/page_theme.php:133
+msgid "Subhead"
+msgstr "小見出し"
+
+#: ../../../themes/stucco/page_theme.php:138
+msgid "Image Caption"
+msgstr "画像キャプション"
+
+#: ../../../themes/stucco/page_theme.php:143
+msgid "Standard Button"
+msgstr "標準ボタン"
+
+#: ../../../themes/stucco/page_theme.php:148
+msgid "Success Button"
+msgstr "OKボタン"
+
+#: ../../../themes/stucco/page_theme.php:153
+msgid "Primary Button"
+msgstr "重要なボタン"
+
+#: ../../../themes/stucco/page_theme.php:158
+msgid "Link Mark"
+msgstr "リンクマーク"
+
+#~ msgid "This is an ahchor point (ID: anchor-%s)"
+#~ msgstr "これはアンカー ポイントです (ID: anchor-%s)"
+
+#~ msgid "Double Line"
+#~ msgstr "ダブルライン"
+
+#~ msgid "Defenition List"
+#~ msgstr "定義リスト"

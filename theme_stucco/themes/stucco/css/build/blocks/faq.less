@@ -1,0 +1,166 @@
+.ccm-faq-container {
+	.ccm-faq-block-links {
+
+		a {
+			display: block;
+			margin-bottom: 10px;
+		}
+	}
+
+	.ccm-faq-block-entries {
+		position: relative;
+		min-height: 1px;
+
+		h3 {
+			margin-top: 0px;
+		}
+
+		.faq-entry-content {
+			margin-bottom: 50px;
+		}
+	}
+
+}
+
+@media (min-width: 1200px) {
+	.ccm-faq-container {
+		.ccm-faq-block-links {
+			float: left;
+			width: 25%;
+		}
+	}
+
+	.ccm-faq-block-entries {
+		float: left;
+		width: 66.66666667%;
+		margin-left: 8.33333333%;
+	}
+}
+
+.stucco-faq-block-links {
+    margin-bottom: 50px;
+
+    a {
+		display: block;
+		margin-bottom: 10px;
+		&:hover {
+			color: @body-link-active-color;
+			text-decoration: none;
+		}
+		&:before {
+			padding-right: 5px;
+			/* color: #777; */
+			font-family: "FontAwesome", sans-serif;
+			font-style: normal;
+			font-weight: normal;
+			font-variant: normal;
+			content: "\f13a";
+		}
+	}
+}
+
+.stucco-faq-block-entries {
+	.faq-entry-content {
+		margin: 0 0 50px;
+
+		h3 {
+			margin: 0 0 10px;
+			font-size: @h4-type-font-size;
+		}
+	}
+}
+
+
+.q-a-container {
+	margin: 0;
+	padding: 0;
+
+	.q-a-contents {
+		margin: 0 0 30px;
+		padding: 0;
+
+		.bubble-wrapper {
+			float: left;
+			display: inline-block;
+			margin-right: 10px;
+			padding: 0;
+			position: relative;
+
+			.bubble {
+				display: inline-block;
+				padding: 5px 12px;
+				color: #fff;
+				font-size: 1.1em;
+				font-weight: normal;
+				position: relative;
+				line-height: 1;
+					-webkit-border-radius: 4px;
+					-moz-border-radius: 4px;
+				border-radius: 4px;
+				&.question {
+					background: lighten(@page-background-color, 30%);
+					&:after {
+						content: '';
+						position: absolute;
+						border-top: 10px solid lighten(@page-background-color, 30%);
+						border-right: 0px solid transparent;
+						border-left: 10px solid transparent;
+						bottom: -8px;
+						left: 12px;
+					}
+				}
+				&.answer {
+					background: @page-background-color;
+					&:after {
+						content: '';
+						position: absolute;
+						border-top: 10px solid @page-background-color;
+						border-right: 0px solid transparent;
+						border-left: 10px solid transparent;
+						bottom: -8px;
+						left: 12px;
+					}
+				}
+
+			}
+		}
+
+		.q-a-block-links {
+			display: block;
+			margin: 0;
+			padding: 10px 20px;
+			font-weight: bold;
+			line-height: 1.8;
+			background-color: #f1f1f1;
+			cursor: pointer;
+			&:hover {
+				background-color: #eaeaea;
+			}
+		}
+
+		.q-a-block-entries {
+			display: none;
+			margin: 0;
+			padding: 20px;
+			vertical-align: top;
+			/* background: url('answer_icon.png') 10px 24px no-repeat; */
+
+			p {
+				margin: 0 0 20px 0;
+				padding: 0;
+			}
+		}
+	}
+}
+
+.all-answer-expanding .q-a-container .q-a-contents {
+	.q-a-block-entries {
+		display: block;
+	}
+}
+
+.first-answer-expanding .q-a-container .q-a-contents:first-child {
+	.q-a-block-entries {
+		display: block;
+	}
+}

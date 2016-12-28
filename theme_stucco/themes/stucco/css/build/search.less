@@ -1,0 +1,231 @@
+.ccm-page {
+	.ccm-search-block-form {
+		input[type="text"] {
+			padding: 5px 8px;
+			border: solid 1px @header-search-input-border-color;
+			background: @header-search-input-background-color;
+		}
+
+		input[type="submit"] {
+  			color: @global-navigation-text-link-color;
+  			border: solid 1px @header-search-input-border-color;
+  			background: @header-search-button-color;
+		}
+	}
+
+	.search-btn-inner {
+  		float:left;
+  		display: block;
+		margin: 0;
+		padding: 0;
+  		position: relative;
+
+  		i {
+  			font-size: 1.1em;
+  			position: absolute;
+			top: 6px;
+			left: 10px;
+			pointer-events: none;
+		}
+	}
+
+	#searchResults {
+		.searchResult {
+			margin-top: 30px;
+			margin-bottom: 30px;
+			color: @body-link-hover-color;
+
+			a {
+				color: @body-link-hover-color;
+			}
+
+			span {
+				color: @global-navigation-background-link-selected-color;
+				background-color: lighten(@global-navigation-background-link-color, 70%) !important;
+			}
+
+			h3 {
+				margin-bottom: 10px;
+				padding-bottom: 0;
+			}
+
+			p {
+				margin-top: 4px;
+			}
+		}
+
+		.pageLink {
+			display: block;
+			margin: 5px 0;
+			padding: 0;
+			color: @body-link-color;
+			font-size: .9em;
+		}
+	}
+
+	.header-search {
+		margin: 20px auto 20px;
+		text-align: center;
+			.ccm-search-block-form {
+				display: inline-block;
+				margin: 0 auto;
+				text-align: center;
+				&:before,
+				&:after {
+    				content: " ";
+    				display: table;
+    				clear: both;
+					*zoom: 1;
+				}
+
+				h3 {
+					margin: 0;
+					padding: 8px 5px 8px 0;
+					font-size: 1em;
+					font-weight: 400;
+					line-height: 1;
+				}
+		}
+
+		input[type="text"] {
+			float:left;
+			width: 175px;
+			height: 30px;
+			margin: 0;
+			padding: 0 5px;
+			border: solid 1px #ddd;
+			border-radius: 0;
+			position: relative;
+			border: solid 1px @header-search-input-border-color;
+			background: @header-search-input-background-color;
+		}
+
+		input[type="submit"] {
+  			float:left;
+			height: 30px;
+			margin: 0;
+			padding: 0 10px 0 10px;
+			font-size: 1em;
+			font-weight: normal;
+			text-align: left;
+			border-radius: 0;
+			border: solid 1px @header-search-input-border-color;
+			border-left: none;
+			+ i {
+				color: @global-navigation-text-link-color;
+				background: @header-search-button-color;
+			}
+			&:hover {
+				color: @global-navigation-text-link-hover-color;
+				background: @global-navigation-background-link-hover-color;
+				+ i {
+					color: @global-navigation-text-link-hover-color;
+					background: @global-navigation-background-link-hover-color;
+				}
+			}
+		}
+
+		.search-container {
+			input[type="submit"] {
+				padding-left: 30px;
+			}
+		}
+
+		.searchResult {
+			text-align: left;
+			margin-bottom: 20px;
+
+			h3 {
+				float: none;
+				font-weight: 700;
+			}
+		}
+	}
+
+	@media (min-width: 768px) {
+		.header-search {
+			margin: 0 0 30px;
+			padding-right: 0;
+			padding-left: 0;
+
+			.ccm-search-block-form {
+				float: right;
+			}
+
+			h3 {
+				float: left;
+			}
+		}
+	}
+
+	.block-sidebar-wrapped {
+		.ccm-search-block-form {
+			width: 100%;
+			margin-bottom: 50px;
+			content: " ";
+			display: table;
+			clear: both;
+			*zoom: 1;
+
+			h3 {
+				margin: 0 0 10px;
+				padding-bottom: 5px;
+				font-size: @h5-type-font-size;
+				border-bottom: dotted 1px @body-type-color;
+			}
+
+			.ccm-search-block-text {
+				width: 100%;
+				margin-right: 0;
+				margin-bottom: 5px;
+				padding: 4px 8px;
+			}
+
+			.ccm-search-block-submit {
+				width: 100%;
+				/* padding: 0; */
+				/* float: right; */
+			}
+		}
+	}
+
+	@media (min-width: 992px) {
+		.block-sidebar-wrapped {
+			.ccm-search-block-form {
+				width: 100%;
+				margin-bottom: 50px;
+				content: " ";
+				display: table;
+				clear: both;
+				*zoom: 1;
+
+				h3 {
+					margin: 0 0 10px;
+					padding-bottom: 5px;
+					font-size: @h5-type-font-size;
+					border-bottom: dotted 1px @body-type-color;
+				}
+
+				.ccm-search-block-text {
+					float: left;
+					width: 65%;
+					height: 30px;
+					margin-right: 0;
+					padding: 3px 8px;
+				}
+
+				.ccm-search-block-submit {
+					width: auto;
+					height: 30px;
+					padding: 7px 8px;
+					float: right;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+

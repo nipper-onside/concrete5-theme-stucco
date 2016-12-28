@@ -1,0 +1,119 @@
+.ccm-block-testimonial-wrapper {
+	margin-top: 60px;
+	margin-bottom: 60px;
+	&:before,
+	&:after {
+    	content: " ";
+		display: table;
+	}
+	&:after {
+    	clear: both;
+	}
+
+    .ccm-block-testimonial {
+		.ccm-block-testimonial-image {
+			float: none;
+			position: relative;
+			min-height: 1px;
+			margin-right: 0;
+			padding-left: 15px;
+			padding-right: 15px;
+
+			img {
+				display: block;
+				width: 100% \9;
+				max-width: 100%;
+				max-height: 100%;
+					-webkit-border-radius: 50%;
+					-moz-border-radius: 50%;
+					-ms-border-radius: 50%;
+				border-radius: 50%;
+				background-color: @social-button-background-color;
+			}
+		}
+
+		.ccm-block-testimonial-text {
+			float: none;
+			position: relative;
+			min-height: 1px;
+			padding-left: 15px;
+			padding-right: 15px;
+
+			div.ccm-block-testimonial-name {
+				/* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+				color: @header-site-title-type-color;
+				font-size: @h4-type-font-size;
+				text-transform: none;
+			}
+
+			.ccm-block-testimonial-position {
+				color: @title-thin-type-color;
+				font-style: normal;
+			}
+
+			.ccm-block-testimonial-paragraph {
+				margin-top: 20px;
+			}
+		}
+	}
+
+	@media (min-width: 768px) {
+		.ccm-block-testimonial {
+			.ccm-block-testimonial-image {
+				float: left;
+				width: 25%;
+				margin-right: 0;
+			}
+
+			.ccm-block-testimonial-text {
+				float: left;
+				width: 75%;
+			}
+		}
+	}
+}
+
+.testimonial-bio {
+	margin-bottom: 60px;
+	&:only-child {
+		margin-bottom: 0;
+	}
+
+	.ccm-block-testimonial-wrapper {
+		margin-top: 0;
+		margin-bottom: 0;
+
+		.ccm-block-testimonial {
+			margin-left: 0;
+			margin-right: 0;
+
+			.ccm-block-testimonial-image {
+				width: auto;
+				float: none;
+				padding: 0;
+				margin-bottom: 30px;
+
+				img {
+						-webkit-border-radius: 0;
+						-moz-border-radius: 0;
+						-ms-border-radius: 0;
+					border-radius: 0;
+				}
+			}
+
+			.ccm-block-testimonial-text {
+				float: none;
+				width: 100%;
+				padding: 0;
+			}
+		}
+	}
+}
+
+@media (max-width: 479px) {
+	.ccm-block-testimonial-image {
+		img {
+			margin: 10px auto;
+		}
+	}
+}

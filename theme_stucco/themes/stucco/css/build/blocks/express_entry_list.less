@@ -1,0 +1,48 @@
+
+.ccm-block-express-entry-list-table {
+	margin: 0;
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 1.4;
+
+	thead {
+
+		tr {
+
+			a {
+				color: @title-bold-type-color;
+				&:hover {
+					color: @body-link-active-color;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+
+
+	.ccm-block-express-entry-list-row-a,
+	.ccm-block-express-entry-list-row-b {
+		a {
+			padding-left: 1px;
+			color: @body-link-color;
+			&:hover {
+				color: @body-link-active-color;
+				text-decoration: none;
+			}
+			&:before {
+				padding-right: 5px;
+				/* color: #777; */
+				font-family: "FontAwesome", sans-serif;
+				font-style: normal;
+				font-weight: normal;
+				font-variant: normal;
+				content: "\f138";
+			}
+		}
+	}
+
+	.ccm-block-express-entry-list-row-b {
+		background: lighten(@page-border-color, 10%);
+	}
+}

@@ -1,0 +1,537 @@
+/*----------------------------------------------
+
+	Theme Name: Stucco
+	Website Designed and developed by www.onside.com
+	Author: Shin'ichi Nakane
+	Description: Main Style Sheet 02-12-2016 (mm-dd-yyyy)
+	Version: 1.1
+
+----------------------------------------------*/
+
+@import "presets/defaults.less";
+@import "build/common.less";
+@import "build/header.less";
+@import "build/footer.less";
+@import "build/global-nav.less";
+@import "build/breadcrumb.less";
+@import "build/search.less";
+@import "build/pagination.less";
+@import "build/front-page.less";
+@import "build/blocks/image-slider.less";
+@import "build/blocks/feature.less";
+@import "build/blocks/page-list.less";
+@import "build/blocks/topic-list.less";
+@import "build/blocks/testimonial.less";
+@import "build/blocks/social-button.less";
+@import "build/blocks/faq.less";
+@import "build/blocks/express_entry_detail.less";
+@import "build/blocks/express_entry_list.less";
+@import "build/mobile/navigation.less";
+
+.ccm-toolbar-add {
+	/* display: none; */
+}
+
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #555;
+}
+
+html {
+	font-size: 1em;
+    font-size: 1rem;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid @page-content-hr-color;
+    margin: 2em 0;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+	hr {
+    	margin-top: 80px;
+    	margin-bottom: 80px;
+	}
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html {
+	height: 100%;
+	width: 100%;
+
+}
+
+
+body {
+	font-family: 'Noto Sans Japanese', '游ゴシック', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, Helvetica, 'Helvetica Neue', Arial, Roboto, 'Droid Sans', sans-serif;
+	color: @body-type-color;
+    font-size: @body-type-font-size;
+    line-height: @line-height-size;
+    background-color: @page-background-color;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+img {
+	margin: 0;
+	padding: 0;
+	max-width:100%;
+	width: auto\9;
+	height: auto;
+}
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+	position: absolute;
+	top: -200px;
+	transition: position 0.5s ease;
+	&:hover,
+	&:active,
+	&:focus {
+		width: auto;
+		height: auto;
+		padding: 15px 20px;
+		color: @global-navigation-background-link-selected-color;
+		/* display: block; */
+		font-size: 14px;
+		font-weight: bold;
+		text-decoration: none;
+		line-height: normal;
+		background-color: #f1f1f1;
+		/* border-radius: 3px; */
+		box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
+		top: 5px;
+		left: 5px;
+		z-index: 99;
+	}
+	&.login {
+		&:hover,
+		&:active,
+		&:focus {
+			top: 53px;
+		}
+	}
+}
+
+a {
+	color: @body-link-color;
+	/* outline: 2px solid @body-link-color transparent; */
+	/* outline-offset: 100px; */
+	&:visited {
+		color: @body-link-color;
+	}
+	&:focus {
+		/* outline: 2px solid @body-link-color; */
+		outline-offset: 2px;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: @body-link-hover-color;
+		text-decoration: underline;
+	}
+}
+
+blockquote {
+    margin: 0 0 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: @blockquote-left-padding-size;
+    padding-right: @blockquote-right-padding-size;
+    font-size: @blockquote-type-font-size;
+    border: none;
+    position: relative;
+    &:before {
+		margin: 0;
+		color: @blockquote-mark-color;
+		font-family: "FontAwesome", sans-serif;
+		font-size: 2em;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		content: "\f10d";
+		position: absolute;
+		top: -10px;
+		left: 0;
+	}
+	&:after {
+		margin: 0;
+		color: @blockquote-mark-color;
+		font-family: "FontAwesome", sans-serif;
+		font-size: 2em;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		content: "\f10e";
+		position: absolute;
+		bottom: -15px;
+		right: 0;
+	}
+}
+
+.header-container {
+	border-top: solid 10px @page-background-color;
+	background-color: @header-background-color;
+}
+
+.main-container {
+	padding: 0;
+	background-color: @page-main-background-color;
+	overflow: hidden;
+}
+
+.footer-container {
+	padding: 0;
+	color: @footer-text-color;
+	text-align: center;
+	background-color: @footer-background-color;
+	/* overflow: hidden; */
+	position: relative;
+}
+
+.main aside {
+	overflow: hidden;
+}
+
+.header-content-inner {
+	margin: 0 auto;
+	padding: 0;
+	background-color: @header-background-color;
+	position: relative;
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+	.header-content-inner {
+		width: 100%;
+	}
+}
+
+@media (min-width: 768px) {
+	.header-content-inner {
+		width: 750px;
+	}
+}
+
+@media (min-width: 992px) {
+	.header-content-inner {
+		width: 970px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.header-content-inner {
+		width: 1170px;
+	}
+}
+
+.main-content-inner {
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	background-color: @page-content-background-color;
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+	.main-content-inner {
+		width: 100%;
+	}
+}
+
+@media (min-width: 768px) {
+	.main-content-inner {
+		width: 750px;
+	}
+}
+
+@media (min-width: 992px) {
+	.main-content-inner {
+		width: 970px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.main-content-inner {
+		width: 1170px;
+	}
+}
+
+@media (min-width: 992px) {
+	.footer-container .container {
+		margin-bottom: 0;
+	}
+}
+
+.content-primary,
+.content-secondary {
+	margin-top: 30px;
+
+	h1.page-title {
+		margin-top: 0;
+	}
+}
+
+.content-secondary-inner {
+	padding: 20px 10px;
+	background-color: #fff;
+}
+
+.add-account-menu {
+	#ccm-account-menu {
+		z-index: 25;
+	}
+
+	.header-container {
+		position: relative;
+		padding-top: 30px;
+		&.front-page {
+			padding-top: 0;
+
+			.header-navi {
+				padding-top: 15px;
+			}
+		}
+	}
+}
+
+.footer-content-inner {
+	position: relative;
+
+	#ccm-account-menu {
+		top: auto;
+		right: 10px;
+		bottom: 10px;
+
+		a.btn {
+			padding: 10px 15px 10px 20px;
+			color: @footer-text-color;
+			background-color: @footer-background-color;
+			border-color: @footer-text-color;
+			&:active,
+			&:hover {
+				background-color: darken(@footer-background-color, 15%);
+			}
+		}
+
+		@media (min-width: 768px) {
+			bottom: 35px;
+		}
+
+		button {
+			color: @footer-text-color;
+			background-color: @footer-background-color;
+			border-left: 1px solid;
+			&:active,
+			&:focus,
+			&:hover {
+				color: @footer-text-color;
+				background-color: darken(@footer-background-color, 15%);
+				border-color: @footer-text-color;
+			}
+		}
+	}
+}
+
+/*----------------------------------------------
+	Home Styles
+----------------------------------------------*/
+
+.hero-image {
+	overflow: hidden;
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        /* text-decoration: underline; */
+        text-decoration: none;
+    }
+
+/*
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+*/
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+
+	.header-conctens,
+	.global-navi,
+	.footer-nav,
+    .sidebar {
+	    display: none;
+    }
+
+}
+
+
+
+
+

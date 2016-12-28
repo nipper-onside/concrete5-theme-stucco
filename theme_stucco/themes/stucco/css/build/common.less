@@ -1,0 +1,751 @@
+/*----------------------------------------------
+	Input Styles
+----------------------------------------------*/
+
+.ccm-page {
+	/* position: relative; */
+
+	.form-group {
+		margin-bottom: 20px;
+		content: " ";
+		display: table;
+		clear: both;
+		*zoom: 1;
+	}
+
+	input {
+/*
+		margin: 0;
+		padding: 0;
+*/
+		border: none;
+	}
+
+	.btn  {
+		/* border-radius: 0; */
+	    -webkit-border-radius: 20px;
+	    -moz-border-radius: 20px;
+	    border-radius: 20px;
+	    -ms-border-radius: 20px;
+	    padding: 10px 30px 10px 30px;
+	}
+
+	.btn-default {
+		border-color: #ddd;
+		&:focus,
+		.focus {
+			border-color: #ddd;
+		}
+		&:hover {
+			border-color: #ddd;
+		}
+	}
+
+	.form-control {
+		line-height: 18px;
+		border: solid 1px #ddd;
+		border-radius: 0;
+	}
+
+	.form-inline {
+		.form-control {
+			display: inline-block;
+		    width: auto;
+		    vertical-align: middle;
+		}
+	}
+
+	.ccm-input-time-wrapper {
+		.form-control {
+			margin: 0 5px;
+		}
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	input[type="url"],
+	.ccm-input-date {
+		float:left;
+		margin: 0;
+		padding: 3px 8px 3px 8px;
+		border: solid 1px #ddd;
+		border-radius: 0;
+	}
+
+	input[type="file"] {
+		padding: 6px 1px;
+		border: none;
+			-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+
+	input[type="radio"],
+	input[type="checkbox"] {
+		margin: 7px 0 0;
+		margin-top: 1px \9;
+		line-height: normal;
+	}
+
+	.radio input[type="radio"],
+	.radio-inline input[type="radio"],
+	.checkbox input[type="checkbox"],
+	.checkbox-inline input[type="checkbox"] {
+		margin-left: -20px;
+	}
+
+	button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"] {
+		color: @global-navigation-text-link-color;
+		background: @global-navigation-background-link-color;
+		box-shadow: none;
+		cursor: pointer;
+			-webkit-appearance: button;
+/*
+		line-height: 1;
+		padding: 8px;
+*/
+		text-shadow: none;
+		border: solid 1px #ddd;
+		border-left: none;
+		&:hover {
+			color: @global-navigation-text-link-hover-color;
+			background: @global-navigation-background-link-hover-color;
+				-webkit-transition: all .2s ease-in-out;
+				-moz-transition: all .2s ease-in-out;
+			transition: all .2s ease-in-out;
+			box-shadow: none;
+			+ i {
+				color: @global-navigation-text-link-hover-color;
+				background: @global-navigation-background-link-hover-color;
+					-webkit-transition: all .2s ease-in-out;
+					-moz-transition: all .2s ease-in-out;
+				transition: all .2s ease-in-out;
+				box-shadow: none;
+			}
+		}
+	}
+
+	// Alternate buttons
+	// --------------------------------------------------
+
+	.btn-default {
+		color: @btn-default-color;
+		background: @btn-default-bg;
+		text-shadow: none;
+		&:hover {
+			color: @btn-default-color;
+			background: lighten(@btn-default-bg, 20%);
+		}
+	}
+
+	.btn-primary {
+		color: @btn-primary-color;
+		background: @btn-primary-bg;
+		&:hover {
+			color: @btn-primary-color;
+			background: darken(@btn-primary-bg, 15%);
+		}
+	}
+	// Success appears as green
+	.btn-success {
+		color: @btn-success-color;
+		background: @btn-success-bg;
+		&:hover {
+			background: darken(@btn-success-bg, 15%);
+		}
+	}
+	// Info appears as blue-green
+	.btn-info {
+		color: @btn-info-color;
+		background: @btn-info-bg;
+		&:hover {
+			background: darken(@btn-info-bg, 15%);
+		}
+	}
+	// Warning appears as orange
+	.btn-warning {
+		color: @btn-warning-color;
+		background: @btn-warning-bg;
+		&:hover {
+			background: darken(@btn-warning-bg, 15%);
+		}
+	}
+	// Danger and error appear as red
+	.btn-danger {
+		color: @btn-danger-color;
+		background: @btn-danger-bg;
+		&:hover {
+			background: darken(@btn-danger-bg, 15%);
+		}
+
+	}
+
+	dl {
+		margin: 0 0 40px;
+		padding: 0;
+		color: @body-type-color;
+
+		dt {
+			margin: 0 0 10px;
+			padding: 0;
+			line-height: @line-height-size;
+
+			p {
+				margin: 0;
+				padding: 0;
+			}
+		}
+
+		dd {
+			margin: 0;
+			padding: 0;
+			line-height: @line-height-size;
+
+			p {
+				margin: 0;
+				padding: 0;
+			}
+		}
+		&.last {
+			margin-bottom: 0;
+		}
+	}
+
+	.description-table {
+		dl {
+			display: table;
+			width: 100%;
+			padding: 15px 0;
+
+			dt {
+				display: table-cell;
+				width: @definition-term-size;
+				margin: 0 10px 30px 0;
+				padding: 0;
+				font-weight: 400;
+				line-height: @line-height-size;
+			}
+
+			dd {
+				display: table-cell;
+				margin: 0;
+				padding: 0;
+				line-height: @line-height-size;
+			}
+			&.last {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.heading-centering {
+		text-align: center;
+	}
+
+	.heading-right {
+		text-align: right;
+	}
+
+	.heading-types {
+		.left-border {
+			span {
+				margin: 0;
+				padding: 0 0 0 15px;
+				color: @page-heading-types-color;
+				border-left: solid 6px @page-heading-types-color;
+			}
+		}
+		.double-line {
+			padding-top: 1em;
+
+			span {
+				margin: 0;
+				padding: 8px .4em 8px;
+				color: @page-heading-types-color;
+				border-top: solid 6px @page-heading-types-color;
+				border-bottom: solid 6px @page-heading-types-color;
+			}
+		}
+		.under-line {
+			span {
+				margin: 0;
+				padding: 0 0 8px;
+				color: @page-heading-types-color;
+				border-bottom: solid 6px @page-heading-types-color;
+			}
+		}
+		.dot-under-line {
+			span {
+				margin: 0;
+				padding: 0 0 13px;
+				color: @page-heading-types-color;
+				/* background: url('../img/headeing_dot.svg') left bottom repeat-x; */
+				background: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="8px" viewBox="0 0 12 8" enable-background="new 0 0 12 8" xml:space="preserve"><circle class="dot-line" cx="6" cy="4" r="3" fill="@{heading-types-dot-color}" /></svg>') center bottom repeat-x;
+			}
+		}
+	}
+
+}
+
+/* fill="@{heading-types-dot-color}" */
+
+@heading-types-dot-color: lighten(@page-heading-types-color, 50%);
+
+.ccm-search-block-form {
+	input {
+		&.ccm-search-block-text {
+			margin-right: 15px;
+			width: 50%;
+			margin-bottom: 15px;
+		}
+	}
+}
+
+
+
+@font-weight-100: 100;
+@font-weight-200: 200;
+@font-weight-300: 300;
+@font-weight-400: 400;
+@font-weight-500: 500;
+@font-weight-600: 600;
+@font-weight-700: 700;
+@font-weight-800: 800;
+@font-weight-900: 900;
+
+
+
+/*----------------------------------------------
+	concrete5 Styles
+----------------------------------------------*/
+
+h1, .h1 {
+	margin: 0 0 30px;
+	color: @h1-type-color;
+	font-size: @h1-type-font-size;
+	font-weight: @h1-type-font-weight;
+}
+
+h2, .h2 {
+	margin: 0 0 20px;
+	color: @h2-type-color;
+	font-size: @h2-type-font-size;
+	font-weight: @h2-type-font-weight;
+}
+
+h3, .h3 {
+	margin: 0 0 20px;
+	color: @h3-type-color;
+	font-size: @h3-type-font-size;
+	font-weight: @h3-type-font-weight;
+}
+
+h4, .h4 {
+	margin: 0 0 20px;
+	color: @h4-type-color;
+	font-size: @h4-type-font-size;
+	font-weight: @h4-type-font-weight;
+}
+
+h5, .h5 {
+	margin: 0 0 20px;
+	padding-bottom: 5px;
+	color: @h5-type-color;
+	font-size: @h5-type-font-size;
+	font-weight: @h5-type-font-weight;
+	/* border-bottom: dotted 1px @body-type-color; */
+}
+
+h6, .h6 {
+	margin: 0 0 20px;
+	color: @h6-type-color;
+	font-size: @h6-type-font-size;
+	font-weight: @h6-type-font-weight;
+}
+
+h1.page-title {
+	margin: 30px 0 50px;
+	padding: 0 0 0 15px;
+	color: @page-title-type-color;
+	font-family: 'Noto Sans Japanese', '游ゴシック', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, Helvetica, 'Helvetica Neue', Arial, Roboto, 'Droid Sans', sans-serif;
+	font-size: @page-title-type-font-size;
+	line-height: 1.2;
+	font-weight: @page-title-type-font-weight;
+	text-transform: @page-title-type-text-transform;
+	border-left: solid 6px @page-title-type-color;
+}
+
+.title-thin {
+	padding: 0 0 20px;
+	color: @title-thin-type-color;
+	font-family: 'Noto Sans Japanese', '游ゴシック', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, Helvetica, 'Helvetica Neue', Arial, Roboto, 'Droid Sans', sans-serif;
+	font-size: @title-thin-type-font-size;
+	font-weight: 100 !important;
+	display: block;
+}
+
+.title-caps-bold {
+	display: block;
+	padding: 20px 0;
+	color: @title-bold-type-color;
+	font-size: @title-bold-type-font-size;
+	font-weight: 700;
+}
+
+.title-caps {
+	display: block;
+	padding: 20px 0;
+	color: @title-caps-type-color;
+	font-family: 'Noto Sans Japanese', '游ゴシック', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, Helvetica, 'Helvetica Neue', Arial, Roboto, 'Droid Sans', sans-serif;
+	font-size: @title-caps-type-font-size;
+	text-transform: uppercase;
+}
+
+.title-headline {
+	padding-bottom: 13px;
+	background: url('../img/headeing_dot.svg') left bottom repeat-x;
+}
+
+.title-subhead {
+	padding: 0 0 0 15px;
+	border-left: solid 4px @page-title-type-color;
+}
+
+.link-mark {
+	&:before {
+		padding-right: 5px;
+		font-family: "FontAwesome", sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		content: "\f138";
+	}
+}
+
+.image-right-tilt {
+	.ccm-image-block {
+		display: block;
+		max-width: 85%;
+		height: auto;
+		margin: 0 auto;
+			-moz-transform: rotate(3deg);
+			-ms-transform: rotate(3deg);
+			-webkit-transform: rotate(3deg);
+		transform: rotate(3deg);
+	}
+}
+
+.image-border {
+	padding: 10px;
+	background-color: #fff;
+}
+
+.image-centering {
+	text-align: center;
+
+	img {
+		margin: 0 auto;
+	}
+}
+
+.image-circle {
+	.ccm-image-block {
+		border-radius: 50%;
+	}
+}
+
+.image-caption {
+	color: @body-link-color;
+	font-size: .9em;
+}
+
+
+.ccm-block-page-attribute-display-wrapper {
+	border-top: 1px solid @body-type-color;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: lighten(@body-type-color, 25%);
+
+	.ccm-block-page-attribute-display-title {
+		color: @body-type-color;
+		display: block;
+	}
+}
+
+.ccm-block-page-attribute-display-wrapper {
+	&:last-child {
+		border-bottom: 1px solid @body-type-color;
+	}
+}
+
+.sidebar {
+	img {
+		margin-bottom: 20px;
+	}
+}
+
+.area-content-accent {
+	margin-top: 80px;
+	margin-bottom: -50px;
+	padding: 65px 0 45px;
+	background-color: @home-lower-background-color;
+
+	.container:last-child {
+		padding-bottom: 0;
+	}
+
+	.title-caps,
+	.title-caps-bold,
+	h3 {
+		display: block;
+		padding: 20px 0;
+		color: @title-caps-type-color;
+		font-family: 'Noto Sans Japanese', '游ゴシック', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, Helvetica, 'Helvetica Neue', Arial, Roboto, 'Droid Sans', sans-serif;
+		font-size: @title-caps-type-font-size;
+		text-transform: uppercase;
+	}
+}
+
+.ccm-area.area-content-accent {
+	margin-bottom: 0;
+}
+
+
+
+/*----------------------------------------------
+	Portfolio Styles
+----------------------------------------------*/
+
+.ccm-block-topic-list-flat-filter {
+	.breadcrumb {
+		background: none;
+
+		a {
+			color: @body-link-color;
+			&:hover {
+				color: @body-link-hover-color;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.ccm-block-topic-list-topic-selected {
+	&.active {
+		color: @body-link-active-color;
+	}
+}
+
+
+
+/*----------------------------------------------
+	Blog Styles
+----------------------------------------------*/
+
+.ccm-block-page-title-byline {
+    /* padding-bottom: 50px; */
+    border-bottom: none;
+    margin-bottom: 50px;
+
+    h1 {
+    	&.page-title  {
+    		/* margin-top: 0; */
+			margin-bottom: 10px;
+		}
+	}
+
+	.page-date {
+		color: @body-type-color;
+	}
+
+	.page-author {
+		color: @body-link-color;
+	}
+
+}
+
+
+.ccm-block-next-previous-wrapper {
+	margin: 0 0 50px;
+
+	h5 {
+		margin: 0;
+		font-weight: 400;
+		border: none;
+	}
+
+	.ccm-block-next-previous-parent-link {
+		padding-top: 10px;
+		border-top: dotted 1px #aaa;
+
+		a {
+			color: @body-link-color;
+			&:hover {
+				color: @body-link-active-color;
+				text-decoration: none;
+			}
+			&:before {
+				padding-right: 5px;
+				/* color: #777; */
+				font-family: "FontAwesome", sans-serif;
+				font-style: normal;
+				font-weight: normal;
+				font-variant: normal;
+				content: "\F139";
+			}
+		}
+	}
+
+	.ccm-block-next-previous-previous-link {
+		margin-left: 1.2em;
+		margin-left: 1.2rem;
+		padding-bottom: 10px;
+		text-indent: -1.2em;
+		text-indent: -1.2rem;
+		line-height: 1.4;
+
+		a {
+			color: @body-link-color;
+			&:hover {
+				color: @body-link-active-color;
+				text-decoration: none;
+			}
+			&:before {
+				padding-right: 5px;
+				/* color: #777; */
+				font-family: "FontAwesome", sans-serif;
+				font-style: normal;
+				font-weight: normal;
+				font-variant: normal;
+				content: "\f137";
+			}
+		}
+	}
+
+	.ccm-block-next-previous-next-link {
+		margin-left: 1.2em;
+		margin-left: 1.2rem;
+		padding-bottom: 10px;
+		text-indent: -1.2em;
+		text-indent: -1.2rem;
+		line-height: 1.4;
+
+		a {
+			color: @body-link-color;
+			&:hover {
+				color: @body-link-active-color;
+				text-decoration: none;
+			}
+			&:before {
+				padding-right: 5px;
+				/* color: #777; */
+				font-family: "FontAwesome", sans-serif;
+				font-style: normal;
+				font-weight: normal;
+				font-variant: normal;
+				content: "\f138";
+			}
+		}
+	}
+}
+
+
+
+.ccm-block-share-this-page {
+	margin: 0 0 50px;
+
+	i {
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		margin: 0 2px;
+		text-align: center;
+		background-color: @icon-background-color;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+		border-radius: 50%;
+		border: solid 2px @icon-background-color;
+		color: @icon-color;
+		font-size: 16px;
+		line-height: 28px;
+		&:hover {
+			color: @icon-background-color;
+			background-color: @icon-background-hover-color;
+				-webkit-transition: all .2s ease-in-out;
+				-moz-transition: all .2s ease-in-out;
+			transition: all .2s ease-in-out;
+		}
+	}
+
+}
+
+.block-sidebar-wrapped {
+	ul {
+    	list-style-type: none;
+		padding: 0;
+		margin: 0;
+		color: @body-link-active-color;
+
+		a {
+			color: @body-link-color;
+			&:hover {
+				color: @body-link-active-color;
+			}
+		}
+
+		ul {
+			padding-left: 20px;
+			font-size: 1em;
+		}
+
+	}
+}
+
+.page_not_found,
+.page_forbidden {
+	.jumbo {
+		padding: 50px 0;
+
+		h1 {
+			font-size: 3.2em;
+		}
+	}
+}
+
+.stucco-anchor-links {
+	list-style: none;
+    margin-bottom: 50px;
+    padding: 0;
+
+    a {
+		display: block;
+		margin-bottom: 10px;
+		padding-left: 2px;
+		&:hover {
+			color: @body-link-active-color;
+			text-decoration: none;
+		}
+		&:before {
+			padding-right: 5px;
+			/* color: #777; */
+			font-family: "FontAwesome", sans-serif;
+			font-style: normal;
+			font-weight: normal;
+			font-variant: normal;
+			content: "\f13a";
+		}
+	}
+}
+
+.anchor-link-inline {
+	.stucco-anchor-links {
+		li {
+			display: inline-block;
+			margin-right: 10px;
+		}
+	}
+}
+

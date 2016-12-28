@@ -1,0 +1,130 @@
+.content-secondary,
+.block-sidebar-wrapped {
+	.ccm-block-topic-list-wrapper {
+		margin: 0 0 50px;
+	}
+
+	h5 {
+		margin: 0 0 10px;
+		border-bottom: dotted 1px @body-type-color;
+	}
+	.ccm-block-topic-list-header {
+		h5 {
+			margin: 0 0 10px;
+			border-bottom: dotted 1px @body-type-color;
+		}
+	}
+
+	.ccm-block-topic-list-page-topics,
+	.ccm-block-topic-list-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			margin-bottom: 10px;
+
+			a {
+				color: @body-link-color;
+				&:hover {
+					color: @body-link-active-color;
+					text-decoration: none;
+				}
+				&:before {
+					padding-right: 5px;
+					/* color: #777; */
+					font-family: "FontAwesome", sans-serif;
+					font-style: normal;
+					font-weight: normal;
+					font-variant: normal;
+					content: "\f138";
+				}
+			}
+		}
+		ul {
+			padding-left: 20px;
+		}
+	}
+}
+
+.ccm-block-date-navigation-wrapper {
+	margin-bottom: 50px;
+
+	.ccm-block-date-navigation-header {
+		h5 {
+			margin: 0 0 10px;
+			border-bottom: dotted 1px @body-type-color;
+		}
+	}
+
+	.ccm-block-date-navigation-dates {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			margin-bottom: 10px;
+
+			a {
+				color: @body-link-color;
+				&:hover {
+					color: @body-link-active-color;
+					text-decoration: none;
+				}
+				&:before {
+					padding-right: 5px;
+					/* color: #777; */
+					font-family: "FontAwesome", sans-serif;
+					font-style: normal;
+					font-weight: normal;
+					font-variant: normal;
+					content: "\f138";
+				}
+			}
+		}
+	}
+
+}
+
+.ccm-block-topic-list-flat-filter {
+	margin: 0;
+
+	.breadcrumb{
+		padding-left: 0;
+		padding-right: 0;
+		letter-spacing: -0.5em;
+
+		li {
+			margin: 0 10px 5px 0;
+			letter-spacing: normal;
+			&:before {
+				padding: 0;
+				content: "";
+			}
+
+			a {
+				padding: 3px 10px;
+				color: @global-navigation-text-link-color;
+				font-size: .9em;
+				background-color: @global-navigation-background-link-color;
+				opacity: 0.6;
+				border-radius: 4px;
+					-moz-transition: all 0.2s linear;
+					-webkit-transition: all 0.2s linear;
+					-o-transition: all 0.2s linear;
+					-ms-transition: all 0.2s linear;
+
+				&.ccm-block-topic-list-topic-selected,
+				&:hover,
+				&:focus,
+				&:active {
+					color: @global-navigation-text-link-color;
+					font-weight: normal;
+					text-decoration: none;
+					background-color: @global-navigation-background-link-color;
+					opacity: 1;
+				}
+			}
+		}
+	}
+}

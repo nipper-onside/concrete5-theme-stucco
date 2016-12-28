@@ -1,0 +1,738 @@
+.global-navi {
+
+	li {
+		a {
+		display: block;
+		height: 100%;
+			-moz-transition: all 0.2s ease-in-out;
+			-webkit-transition: all 0.2s ease-in-out;
+			-o-transition: all 0.2s ease-in-out;
+			-ms-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+		}
+	}
+
+
+	.global-navi-wrapper {
+
+	}
+
+	nav.ccm-responsive-navigation {
+
+		.dropdown {
+			&:after {
+				content: ' ▶';
+			}
+			&:hover {
+				&:after {
+					content:'\25bc';
+				}
+			}
+		}
+
+		ul {
+			/* float: right; */
+			list-style: none;
+			/* margin-top: 10px !important; */
+			margin: 0;
+			padding: 0;
+				-webkit-font-smoothing:antialiased;
+
+			a {
+				/* padding-left: 30px; */
+				display: block;
+				padding: 10px 15px;
+				color: @global-navigation-text-link-color;
+				font-size: @header-navigation-type-font-size;
+				font-weight: @header-navigation-type-font-weight;
+				background-color: @global-navigation-background-link-color;
+				&:hover {
+					color: @global-navigation-text-link-hover-color;
+					background-color: @global-navigation-background-link-hover-color;
+					text-decoration: none;
+				}
+				&.nav-path-selected {
+					color: @global-navigation-text-link-color;
+					background-color: @global-navigation-background-link-selected-color;
+				}
+			}
+
+			li {
+				margin: 0;
+				padding: 0;
+				position: relative;
+				display: inline-block;
+				&:hover {
+					ul {
+						opacity: 1;
+						top: 55px;
+						visibility: visible;
+					}
+				}
+
+				ul {
+					/* float: left; */
+					width: 200px;
+					padding: 0;
+					padding-bottom: 0;
+					visibility: hidden;
+					background-color: @global-navigation-child-background-link-color;
+					/* border: solid 1px @global-navigation-child-background-link-color; */
+					position: absolute;
+					top: 40px;
+					left: 0;
+					z-index: 99;
+					opacity: 0;
+						-moz-transition: all 0.2s ease-in-out;
+						-webkit-transition: all 0.2s ease-in-out;
+						-o-transition: all 0.2s ease-in-out;
+						-ms-transition: all 0.2s ease-in-out;
+					transition: all 0.2s ease-in-out;
+					/* border: 1px solid @page-content-hr-color; */
+					cursor: pointer;
+
+					li {
+						float: none;
+						width: 100%;
+						padding-bottom: 0;
+						/* border-top: solid 1px @page-content-hr-color; */
+						border-bottom: 1px solid @global-navigation-text-link-color;
+						&:last-child {
+							border-bottom: none;
+						}
+						&:first-child {
+							/* border: none; */
+
+							a {
+								&:after {
+									width: 0;
+									height: 0;
+									margin: 0 auto;
+									border: 6px solid transparent;
+									border-top: 0;
+									border-bottom-color: @global-navigation-child-background-link-color;
+									position: absolute;
+									top: -6px;
+									left: 20px;
+									content: '';
+								}
+								&:hover {
+/*
+									color: @global-navigation-text-link-hover-color;
+									background-color: @global-navigation-background-link-hover-color;
+									border-color: @global-navigation-background-link-hover-color;
+*/
+									&:after {
+										border-bottom-color: @global-navigation-background-link-hover-color;
+											-moz-transition: all 0.2s ease-in-out;
+											-webkit-transition: all 0.2s ease-in-out;
+											-o-transition: all 0.2s ease-in-out;
+											-ms-transition: all 0.2s ease-in-out;
+										transition: all 0.2s ease-in-out;
+									}
+								}
+								&.nav-path-selected {
+									background-color: @global-navigation-child-background-link-selected-color;
+									&:after {
+										border-bottom-color: @global-navigation-child-background-link-selected-color;
+										-moz-transition: all 0.2s ease-in-out;
+										-webkit-transition: all 0.2s ease-in-out;
+										-o-transition: all 0.2s ease-in-out;
+										-ms-transition: all 0.2s ease-in-out;
+									transition: all 0.2s ease-in-out;
+									}
+									&:hover {
+										color: @global-navigation-text-link-hover-color;
+										background-color: @global-navigation-background-link-hover-color;
+										border-color: @global-navigation-background-link-hover-color;
+										&:after {
+											border-bottom-color: @global-navigation-background-link-hover-color;
+												-moz-transition: all 0.2s ease-in-out;
+												-webkit-transition: all 0.2s ease-in-out;
+												-o-transition: all 0.2s ease-in-out;
+												-ms-transition: all 0.2s ease-in-out;
+											transition: all 0.2s ease-in-out;
+										}
+									}
+								}
+							}
+						}
+						&:hover {
+							a {
+								color:@page-background-color;
+							}
+						}
+
+						a {
+							display: block;
+							padding: 10px;
+							text-transform: none;
+							/* color: @body-link-color; */
+							background-color: @global-navigation-child-background-link-color;
+							border-color: @global-navigation-child-background-link-color;
+								-moz-transition: all 0.2s ease-in-out;
+								-webkit-transition: all 0.2s ease-in-out;
+								-o-transition: all 0.2s ease-in-out;
+								-ms-transition: all 0.2s ease-in-out;
+							transition: all 0.2s ease-in-out;
+							&:hover {
+								/* color: @global-navigation-background-link-selected-color; */
+								color: @global-navigation-text-link-hover-color;
+								background-color: @global-navigation-background-link-hover-color;
+							}
+							&.nav-path-selected {
+								background-color: @global-navigation-child-background-link-selected-color;
+								&:hover {
+									color: @global-navigation-text-link-hover-color;
+									background-color: @global-navigation-background-link-hover-color;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media (min-width: 768px) {
+		nav.ccm-responsive-navigation {
+    		width: 750px;
+    		margin: 0 auto;
+		}
+	}
+
+	@media (min-width: 992px) {
+		nav.ccm-responsive-navigation {
+			width: 970px;
+			margin: 0 auto;
+		}
+	}
+
+	@media (min-width: 1200px) {
+		nav.ccm-responsive-navigation {
+			width: 1170px;
+			margin: 0 auto;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+  	.global-navi {
+		position: absolute;
+		top: 10px;
+		z-index: 999;
+	}
+}
+
+@media (min-width: 768px) {
+  	.global-navi {
+		width: 100%;
+		min-height: 20px;
+		margin: 0;
+		padding: 0;
+		background: @global-navigation-background-color;
+		position: relative;
+		/* z-index: 5; */
+	}
+
+	.global-navi-wrapper {
+    	width: 750px;
+	}
+}
+
+@media (min-width: 992px) {
+	.global-navi-wrapper {
+		width: 970px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.global-navi-wrapper {
+		width: 1170px;
+	}
+}
+
+/*
+# Animenu
+#
+# A responsive dropdown navigation made with SASS and a bit of JS,based on this [original article](http://red-team-design.com/animenu-a-responsive-dropdown-navigation-made-with-sass/).
+#
+# Animenu on large displays
+# ![Animenu on large displays](http://i.imgur.com/Y3oS5R1.gif "Animenu on large displays")
+#
+# Animenu on mobile displays
+# ![Animenu on mobile displays](http://i.imgur.com/4cRdsHT.gif "Animenu on mobile displays")
+#
+# Browser compatibility
+# Animenu works in all major browsers. IE8+.
+#
+# License
+# Public domain: [http://unlicense.org](http://unlicense.org)
+*/
+
+*, *:after, *:before {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.animenu {
+	display: block;
+}
+
+@media (max-width: 767px) {
+	.login .button-wrapper {
+		margin-top: 48px;
+	}
+}
+
+.animenu__toggle {
+	display: inline-block;
+}
+
+.ccm-page button.animenu__toggle {
+	height: 40px;
+	width: 40px;
+	padding: 10px;
+	background-color: @global-navigation-background-link-selected-color;
+	border: 0;
+	cursor: pointer;
+}
+
+.ccm-page button.animenu__toggle:hover {
+	background-color: @global-navigation-background-link-selected-color;
+}
+
+.animenu__toggle__bar {
+	display: block;
+	width: 20px;
+	height: 2px;
+	background-color: @global-navigation-text-link-color;
+		-webkit-transition: 0.15s cubic-bezier(0.75, -0.55, 0.25, 1.55);
+	transition: 0.15s cubic-bezier(0.75, -0.55, 0.25, 1.55);
+}
+.animenu__toggle__bar + .animenu__toggle__bar {
+	margin-top: 4px;
+}
+
+.animenu__toggle--active .animenu__toggle__bar {
+	margin: 0;
+	position: absolute;
+}
+.animenu__toggle--active .animenu__toggle__bar:nth-child(1) {
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.animenu__toggle--active .animenu__toggle__bar:nth-child(2) {
+	opacity: 0;
+}
+.animenu__toggle--active .animenu__toggle__bar:nth-child(3) {
+		-webkit-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.animenu ul {
+	padding: 0;
+	list-style: none;
+}
+
+.animenu li,
+.animenu a {
+	display: inline-block;
+}
+
+.animenu a,
+.animenu a:visited,
+.animenu a:focus {
+	color: @global-navigation-text-link-color;
+	text-decoration: none;
+}
+
+.animenu__nav,
+.animenu__nav__child {
+	display: none;
+}
+
+.animenu__nav {
+	margin: 15px 0 0;
+}
+
+.animenu__nav > li {
+	width: 100%;
+    border-right: 0;
+    border-bottom: 1px solid @global-navigation-text-link-color;
+}
+
+.animenu__nav > li:last-child {
+    border: 0;
+}
+
+.animenu__nav > li:first-child > a:after {
+    height: 0;
+    width: 0;
+    border: 6px solid transparent;
+    border-top: 0;
+    border-bottom-color: @global-navigation-background-link-color;
+    position: absolute;
+    top: -6px;
+    left: 1em;
+    content: '';
+}
+
+.animenu__nav > li:first-child > a:hover:after {
+    border-bottom-color: @global-navigation-background-link-hover-color;
+		-moz-transition: all 0.2s ease-in-out;
+		-webkit-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+		-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.animenu__nav > li > a {
+    width: 100%;
+    padding: 10px 5px;
+    background-color: @global-navigation-background-link-color;
+    position: relative;
+}
+
+.animenu__nav a:hover {
+    color: @global-navigation-text-link-hover-color;
+    background-color: @global-navigation-background-link-hover-color;
+    text-decoration: none;
+}
+
+.animenu__nav a.nav-path-selected {
+	color: @global-navigation-text-link-color;
+  	background-color: @global-navigation-background-link-selected-color;
+}
+
+.animenu__nav a.nav-path-selected:hover {
+	color: @global-navigation-text-link-hover-color;
+  	background-color: @global-navigation-background-link-hover-color;
+}
+
+
+
+.animenu__nav__child {
+	min-width: 100%;
+    margin: 0;
+    background-color: @global-navigation-child-background-link-color;
+   	border-top: 1px solid @global-navigation-child-background-link-color;
+		-webkit-transition: none;
+    transition: none;
+    visibility: visible;
+    opacity: 1;
+    position: static;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+}
+
+.animenu__nav__child a.nav-path-selected {
+    background-color: @global-navigation-child-background-link-selected-color;
+}
+
+.animenu__nav__child > li:first-child > a:after {
+    content: none;
+}
+
+.animenu__nav__child a {
+    padding: 10px 10px 10px 20px;
+    width: 100%;
+}
+
+.animenu__nav__child > li {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+
+.animenu__nav__child > li:last-child {
+    border: 0;
+}
+
+
+.animenu__nav--open {
+    display: block !important;
+}
+.animenu__nav--open .animenu__nav__child {
+    display: block;
+}
+
+
+
+@media (min-width: 768px) {
+
+	.button-wrapper {
+		background: none;
+	}
+
+	.animenu__toggle {
+		display: none;
+	}
+
+	.animenu__nav {
+		display: table;
+		width: 100%;
+		/* height: 100%; */
+		margin: 0;
+		vertical-align: middle;
+		table-layout:fixed;
+	}
+
+	.animenu__nav > li {
+		display: table-cell;
+		width: auto;
+		/* height: 100%; */
+		text-align: center;
+		vertical-align: middle;
+		position: relative;
+		border: none;
+		border-right: 1px solid @global-navigation-text-link-color;
+	}
+
+	.animenu__nav > li:first-child {
+		border-left: 1px solid @global-navigation-text-link-color;
+	}
+
+	.animenu__nav > li:last-child {
+   	 	border-right: 1px solid @global-navigation-text-link-color;
+	}
+
+	.animenu__nav > li:first-child > a:after {
+		content: none;
+	}
+
+	.animenu__nav > li > a {
+		/* display: block; */
+		/* height: 100% */;
+		padding: 10px 5px;
+		font-size: .9em;
+	}
+
+	.animenu__nav > li:hover > ul {
+		margin: 0;
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.animenu__nav > li:hover > a {
+	}
+
+	.animenu__nav__child {
+	    display: block;
+		margin: 20px auto 0;
+		border: none;
+		background-color: @global-navigation-child-background-link-color;
+			-webkit-transition: margin .15s, opacity .15s;
+		transition: margin .15s, opacity .15s;
+		position: absolute;
+		left: 0;
+		right: 0;
+		opacity: 0;
+		visibility: hidden;
+		z-index: 50;
+	}
+
+	.animenu__nav__child > li {
+
+	}
+
+
+	.animenu__nav__child > li:last-child {
+		border: 0;
+	}
+
+	.animenu__nav__child a {
+		padding: 10px;
+		border-color: @global-navigation-child-background-link-color;
+	}
+
+	.animenu__nav__child a:hover {
+		color: @global-navigation-text-link-hover-color;
+		background-color: @global-navigation-background-link-hover-color;
+		border-color: @global-navigation-text-link-color;
+	}
+
+	.animenu__nav__child > li:first-child > a:after {
+		width: 0;
+		height: 0;
+		margin: 0 auto;
+		border: 6px solid transparent;
+		border-top: 0;
+		border-bottom-color: @global-navigation-child-background-link-color;
+		position: absolute;
+		top: -6px;
+		left: 0;
+		right: 0;
+		content: '';
+	}
+
+	.animenu__nav__child > li:first-child > a:hover:after {
+		border-bottom-color: @global-navigation-background-link-hover-color;
+			-moz-transition: all 0.2s ease-in-out;
+			-webkit-transition: all 0.2s ease-in-out;
+			-o-transition: all 0.2s ease-in-out;
+			-ms-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+	}
+
+	.animenu__nav--open {
+    	display: table !important;
+	}
+
+	.animenu__nav__child > li:first-child > a.nav-path-selected:after {
+		border-bottom-color: @global-navigation-child-background-link-selected-color;
+			-moz-transition: all 0.2s ease-in-out;
+			-webkit-transition: all 0.2s ease-in-out;
+			-o-transition: all 0.2s ease-in-out;
+			-ms-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+	}
+
+	.animenu__nav__child > li:first-child > a.nav-path-selected:hover:after {
+		border-bottom-color: @global-navigation-background-link-hover-color;
+			-moz-transition: all 0.2s ease-in-out;
+			-webkit-transition: all 0.2s ease-in-out;
+			-o-transition: all 0.2s ease-in-out;
+			-ms-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+	}
+
+
+
+	.flex-left .animenu__nav {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+			-webkit-box-pack: start;
+			-ms-flex-pack: start;
+			-webkit-justify-content: flex-start;
+		justify-content: flex-start;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+		align-items: center;
+	}
+
+	.flex-center .animenu__nav {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+		justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+		align-items: center;
+}
+
+	.flex-right .animenu__nav {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+			-webkit-box-pack: end;
+			-ms-flex-pack: end;
+			-webkit-justify-content: flex-end;
+		justify-content: flex-end;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+		align-items: center;
+	}
+
+	.flex-justify .animenu__nav {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			-webkit-justify-content: space-between;
+		justify-content: space-between;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+		align-items: center;
+	}
+
+	.flex-left .animenu__nav > li,
+	.flex-center .animenu__nav > li,
+	.flex-right .animenu__nav > li {
+		display: inherit;
+		text-align: center;
+	}
+
+	.flex-justify .animenu__nav > li {
+		display: inherit;
+		width: 100%;
+		text-align: center;
+			-webkit-box-flex: 1;
+			-webkit-flex: 1;
+		flex: 1;
+/*
+		-webkit-flex-grow: 1;
+		flex-grow: 1;
+*/
+	}
+
+	.flex-left .animenu__nav > li > a,
+	.flex-center .animenu__nav > li > a,
+	.flex-right .animenu__nav > li > a,
+	.flex-justify .animenu__nav > li > a {
+		padding: 10px 20px;
+	}
+
+	.flex-left .animenu__nav__child,
+	.flex-center .animenu__nav__child,
+	.flex-right .animenu__nav__child,
+	.flex-justify .animenu__nav__child {
+	    display: block;
+	    width: 100%;
+	}
+
+	.flex-left .animenu__nav__child > li,
+	.flex-center .animenu__nav__child > li,
+	.flex-right .animenu__nav__child > li {
+		width: 200%;
+		background-color: @global-navigation-child-background-link-color;
+		overflow: visible;
+	}
+
+	.flex-justify .animenu__nav__child > li {
+		/* width: 200%; */
+		background-color: @global-navigation-child-background-link-color;
+		overflow: visible;
+	}
+
+	.flex-left .animenu__nav__child > li:last-child,
+	.flex-center .animenu__nav__child > li:last-child,
+	.flex-right .animenu__nav__child > li:last-child,
+	.flex-justify .animenu__nav__child > li:last-child {
+		border: 0;
+	}
+
+	.flex-left .animenu__nav__child a,
+	.flex-center .animenu__nav__child a,
+	.flex-right .animenu__nav__child a,
+	.flex-justify .animenu__nav__child a {
+		display: block;
+		width: 100%;
+		overflow: visible;
+	}
+
+
+
+}
+
+@media (min-width: 992px) {
+	.animenu__nav > li > a {
+		font-size: 1em;
+	}
+}
