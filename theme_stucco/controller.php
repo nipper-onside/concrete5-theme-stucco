@@ -30,7 +30,7 @@ class Controller extends Package
 {
 
 	protected $pkgHandle = 'theme_stucco';
-	protected $appVersionRequired = '5.7.3';
+	protected $appVersionRequired = '5.7.5';
 	protected $pkgVersion = '2.0.0';
 	protected $pkgAllowsFullContentSwap = true;
 
@@ -106,8 +106,8 @@ class Controller extends Package
         BlockType::installBlockTypeFromPackage('stucco_heading', $pkg);
 		PageTheme::add('stucco', $pkg);
 
-		$em = \ORM::entityManager();
 		if ( compat_is_version_8() ) {
+			$em = \ORM::entityManager();
 			$small = $em->getRepository('\Concrete\Core\Entity\File\Image\Thumbnail\Type\Type')->findOneBy(['ftTypeHandle' => 'small']);
 
 		}
@@ -127,6 +127,7 @@ class Controller extends Package
 			$type->save();
 		}
 		if ( compat_is_version_8() ) {
+			$em = \ORM::entityManager();
 			$medium = $em->getRepository('\Concrete\Core\Entity\File\Image\Thumbnail\Type\Type')->findOneBy(['ftTypeHandle' => 'medium']);
 
 		}
@@ -146,6 +147,7 @@ class Controller extends Package
 			$type->save();
 		}
 		if ( compat_is_version_8() ) {
+			$em = \ORM::entityManager();
 			$large = $em->getRepository('\Concrete\Core\Entity\File\Image\Thumbnail\Type\Type')->findOneBy(['ftTypeHandle' => 'large']);
 
 		}
