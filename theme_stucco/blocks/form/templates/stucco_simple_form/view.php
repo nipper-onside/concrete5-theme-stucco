@@ -1,9 +1,15 @@
-<?php 
+<?php
 /************************************************************
  * DESIGNERS: SCROLL DOWN! (IGNORE ALL THIS STUFF AT THE TOP)
  ************************************************************/
 defined('C5_EXECUTE') or die("Access Denied.");
 use \Concrete\Block\Form\MiniSurvey;
+
+if (!function_exists('compat_is_version_8')) {
+    function compat_is_version_8() {
+        return interface_exists('\Concrete\Core\Export\ExportableInterface');
+    }
+}
 
 $survey = $controller;
 $miniSurvey = new MiniSurvey($b);
@@ -77,7 +83,9 @@ $captcha = $surveyBlockInfo['displayCaptcha'] ? Loader::helper('validation/captc
 <div class="stucco-simple-form">
 <div id="formblock<?php   echo $bID; ?>" class="ccm-block-type-form">
 <form enctype="multipart/form-data" class="form-stacked" id="miniSurveyView<?php   echo $bID; ?>" class="miniSurveyView" method="post" action="<?php   echo $formAction ?>">
-
+	<?php if ( compat_is_version_8() ) {
+		echo Core::make('token')->output('form_block_submit_qs_'.$qsID);
+	} ?>
 	<?php   if ($success): ?>
 
 		<div class="alert alert-success">
@@ -112,12 +120,12 @@ $captcha = $surveyBlockInfo['displayCaptcha'] ? Loader::helper('validation/captc
 
 	<?php   if ($captcha): ?>
 		<div class="form-group captcha">
-			<?php 
+			<?php
 			$captchaLabel = $captcha->label();
 			if (!empty($captchaLabel)) {
 				?>
 				<label class="control-label"><?php  echo $captchaLabel; ?></label>
-				<?php 
+				<?php
 			}
 			?>
 			<div><?php   $captcha->display(); ?></div>
