@@ -3,8 +3,6 @@
 ----------------------------------------------*/
 
 .ccm-page {
-	/* position: relative; */
-
 	.form-group {
 		margin-bottom: 20px;
 		content: " ";
@@ -14,20 +12,37 @@
 	}
 
 	input {
-/*
-		margin: 0;
-		padding: 0;
-*/
 		border: none;
 	}
 
 	.btn  {
-		/* border-radius: 0; */
-	    -webkit-border-radius: 20px;
-	    -moz-border-radius: 20px;
-	    border-radius: 20px;
-	    -ms-border-radius: 20px;
-	    padding: 10px 30px 10px 30px;
+		border-radius: 0;
+	}
+
+	.ccm-ui {
+		.btn  {
+		    -webkit-border-radius: 20px;
+		    -moz-border-radius: 20px;
+		    border-radius: 20px;
+		    -ms-border-radius: 20px;
+		    padding: 10px 30px 10px 30px;
+		}
+
+		.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+		    border-bottom-right-radius: 0;
+		    border-top-right-radius: 0;
+		}
+
+		.btn-group > .btn:last-child:not(:first-child),
+		.btn-group > .dropdown-toggle:not(:first-child) {
+		    border-bottom-left-radius: 0;
+		    border-top-left-radius: 0;
+		}
+
+		.btn-group > .btn+.dropdown-toggle {
+		    padding-left: 8px;
+		    padding-right: 8px;
+		}
 	}
 
 	.btn-default {
@@ -103,10 +118,8 @@
 		box-shadow: none;
 		cursor: pointer;
 			-webkit-appearance: button;
-/*
 		line-height: 1;
 		padding: 8px;
-*/
 		text-shadow: none;
 		border: solid 1px #ddd;
 		border-left: none;
@@ -285,6 +298,40 @@
 				/* background: url('../img/headeing_dot.svg') left bottom repeat-x; */
 				background: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="8px" viewBox="0 0 12 8" enable-background="new 0 0 12 8" xml:space="preserve"><circle class="dot-line" cx="6" cy="4" r="3" fill="@{heading-types-dot-color}" /></svg>') center bottom repeat-x;
 			}
+		}
+	}
+
+	#ccm-profile-header {
+
+		h1 {
+			margin: 30px 0 50px;
+			padding: 0 0 0 15px;
+			color: @page-title-type-color;
+			font-family: 'Noto Sans Japanese', '游ゴシック', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, Helvetica, 'Helvetica Neue', Arial, Roboto, 'Droid Sans', sans-serif;
+			font-size: @page-title-type-font-size;
+			line-height: 1.2;
+			font-weight: @page-title-type-font-weight;
+			/* text-transform: @page-title-type-text-transform; */
+			border-left: solid 6px @page-title-type-color;
+		}
+
+		.btn  {
+			/* border-radius: 0; */
+		    -webkit-border-radius: 20px;
+		    -moz-border-radius: 20px;
+		    border-radius: 20px;
+		    -ms-border-radius: 20px;
+		    padding: 10px 30px 10px 30px;
+		}
+
+		.btn-group > .btn:first-child:not(:last-child) {
+		    border-bottom-right-radius: 0;
+		    border-top-right-radius: 0;
+		}
+
+		.btn-group > .btn:last-child:not(:first-child) {
+		    border-bottom-left-radius: 0;
+		    border-top-left-radius: 0;
 		}
 	}
 
@@ -749,3 +796,42 @@ h1.page-title {
 	}
 }
 
+.directory {
+	.page-header {
+		padding-left: 15px;
+		padding-right: 15px;
+
+		h1 {
+			margin: 30px 0 50px;
+			padding: 0 0 0 15px;
+			color: @page-title-type-color;
+			font-family: 'Noto Sans Japanese', '游ゴシック', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, Helvetica, 'Helvetica Neue', Arial, Roboto, 'Droid Sans', sans-serif;
+			font-size: @page-title-type-font-size;
+			line-height: 1.2;
+			font-weight: @page-title-type-font-weight;
+			border-left: solid 6px @page-title-type-color;
+		}
+	}
+
+	.navbar {
+		input[type="text"] {
+			height: 30px;
+			padding-bottom: 2px
+		}
+
+		input[type="submit"] {
+		    width: auto;
+		    height: 30px;
+		    padding: 7px 12px;
+		}
+	}
+
+	#ccm-members-directory {
+		padding-left: 15px;
+		padding-right: 15px;
+
+		td.ccm-members-directory-avatar {
+			padding-left: 15px;
+		}
+	}
+}
