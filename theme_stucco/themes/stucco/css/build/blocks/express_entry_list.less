@@ -1,4 +1,26 @@
 
+.stucco-express-entry-list-header{
+
+	h2 {
+		margin: 0 0 20px;
+		color: @h3-type-color;
+		font-size: @h3-type-font-size;
+		font-weight: @h3-type-font-weight;
+	}
+}
+
+.stucco-express-entry-list-header-sidebar{
+
+	h2 {
+		margin: 0 0 10px;
+		padding-bottom: 5px;
+		color: @h5-type-color;
+		font-size: @h5-type-font-size;
+		font-weight: @h5-type-font-weight;
+		border-bottom: dotted 1px @body-type-color;
+	}
+}
+
 .ccm-block-express-entry-list-table {
 	margin: 0;
 	font-size: 1em;
@@ -16,6 +38,14 @@
 					text-decoration: none;
 				}
 			}
+		}
+	}
+
+	&.sidebar {
+		thead > tr > th,
+		tbody > tr > td {
+			padding-right: 0;
+			padding-left: 0;
 		}
 	}
 
@@ -41,5 +71,30 @@
 
 	.ccm-block-express-entry-list-row-b {
 		/* background: lighten(@page-border-color, 10%); */
+	}
+}
+
+.sidebar-pagination {
+	.ccm-pagination-wrapper {
+		margin-top: 15px;
+		margin-bottom: 50px;
+
+		.pagination > li.prev > a,
+		.pagination > li.prev > span  {
+			padding-right: 0;
+			padding-left: 0;
+			&:before {
+				left: -10px;
+			}
+		}
+
+		.pagination > li.next > a,
+		.pagination > li.next > span  {
+			padding-right: 0;
+			padding-left: 0;
+			&:after {
+				right: -10px;
+			}
+		}
 	}
 }
