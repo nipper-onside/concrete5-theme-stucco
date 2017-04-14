@@ -1713,7 +1713,7 @@
 	                    </style>
 	                    <data table="btContentImage">
 	                      <record>
-	                        <fID>{ccm:export:file:work_icon.svg}</fID>
+	                        <fID>{ccm:export:file:work_icon.png}</fID>
 	                        <fOnstateID/>
 	                        <maxWidth><![CDATA[0]]></maxWidth>
 	                        <maxHeight><![CDATA[0]]></maxHeight>
@@ -1821,7 +1821,7 @@
 	                    </style>
 	                    <data table="btContentImage">
 	                      <record>
-	                        <fID>{ccm:export:file:gallery_icon.svg}</fID>
+	                        <fID>{ccm:export:file:gallery_icon.png}</fID>
 	                        <fOnstateID/>
 	                        <maxWidth><![CDATA[0]]></maxWidth>
 	                        <maxHeight><![CDATA[0]]></maxHeight>
@@ -1929,7 +1929,7 @@
 	                    </style>
 	                    <data table="btContentImage">
 	                      <record>
-	                        <fID>{ccm:export:file:about_icon.svg}</fID>
+	                        <fID>{ccm:export:file:about_icon.png}</fID>
 	                        <fOnstateID/>
 	                        <maxWidth><![CDATA[0]]></maxWidth>
 	                        <maxHeight><![CDATA[0]]></maxHeight>
@@ -2037,7 +2037,7 @@
 	                    </style>
 	                    <data table="btContentImage">
 	                      <record>
-	                        <fID>{ccm:export:file:blog_icon.svg}</fID>
+	                        <fID>{ccm:export:file:blog_icon.png}</fID>
 	                        <fOnstateID/>
 	                        <maxWidth><![CDATA[0]]></maxWidth>
 	                        <maxHeight><![CDATA[0]]></maxHeight>
@@ -3296,7 +3296,7 @@
 	                    </style>
 	                    <data table="btContentImage">
 	                      <record>
-	                        <fID>{ccm:export:file:mail_icon.svg}</fID>
+	                        <fID>{ccm:export:file:mail_icon.png}</fID>
 	                        <fOnstateID/>
 	                        <maxWidth><![CDATA[0]]></maxWidth>
 	                        <maxHeight><![CDATA[0]]></maxHeight>
