@@ -132,10 +132,27 @@ div.ccm-block-feature-item {
 
 
 .stucco-card-feature-item {
-    margin: 0 0 40px;
-		-webkit-box-shadow:rgba(0, 0, 0, 0.3) 0px 0px 3px 1px;
-		-moz-box-shadow:rgba(0, 0, 0, 0.3) 0px 0px 3px 1px;
-	box-shadow:rgba(0, 0, 0, 0.3) 0px 0px 3px 1px;
+
+	a {
+		display: inline-block;
+	    margin: 0 0 40px;
+	    box-shadow: 0 0px 3px 1px rgba(0,0,0,0.16),0 0px 3px 1px rgba(0,0,0,0.16);
+			-webkit-transition: all .2s ease-in-out;
+			-moz-transition: all .2s ease-in-out;
+		transition: all .2s ease-in-out;
+
+		&:hover,
+		&:focus {
+			text-decoration: none;
+			box-shadow: 0 2px 10px 1px rgba(0,0,0,0.18),0 2px 10px 1px rgba(0,0,0,0.18);
+		}
+	}
+
+	span {
+		display: inline-block;
+	    margin: 0 0 40px;
+		box-shadow: 0 0px 3px 1px rgba(0,0,0,0.16),0 0px 3px 1px rgba(0,0,0,0.16);
+	}
 
 	h4 {
 	    margin: 0;
