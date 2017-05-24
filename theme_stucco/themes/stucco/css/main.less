@@ -111,7 +111,7 @@ html {
 
 
 body {
-	font-family: 'Noto Sans Japanese', '游ゴシック', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, Helvetica, 'Helvetica Neue', Arial, Roboto, 'Droid Sans', sans-serif;
+	font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, Avenir, 'Open Sans', Roboto, 'Droid Sans', 'Noto Sans Japanese', '游ゴシック', 'Yu Gothic', '游ゴシック体', 'YuGothic', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'Meiryo UI', 'メイリオ' , Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 	color: @body-type-color;
     font-size: @body-type-font-size;
     line-height: @line-height-size;
@@ -188,7 +188,10 @@ blockquote {
     padding-bottom: 10px;
     padding-left: @blockquote-left-padding-size;
     padding-right: @blockquote-right-padding-size;
+    font-family: @blockquote-type-font-family;
     font-size: @blockquote-type-font-size;
+    font-weight: @blockquote-type-font-weight;
+    color: @blockquote-type-color;
     border: none;
     position: relative;
     &:before {
