@@ -1,4 +1,4 @@
-<?php 
+<?php
 defined('C5_EXECUTE') or die("Access Denied.");
 $th = Core::make('helper/text');
 $c = Page::getCurrentPage();
@@ -33,7 +33,7 @@ $c = Page::getCurrentPage();
 
         <?php  if (is_object($thumbnail)): ?>
             <div class="ccm-block-page-list-page-entry-grid-thumbnail">
-                <a href="<?php  echo $url ?>" target="<?php  echo $target ?>"><?php 
+                <a href="<?php  echo $url ?>" target="<?php  echo $target ?>"><?php
                 $img = Core::make('html/image', array($thumbnail));
                 $tag = $img->getTag();
                 $tag->addClass('img-responsive');
@@ -79,7 +79,18 @@ $c = Page::getCurrentPage();
 </div>
 
 <?php  if ($showPagination): ?>
-    <?php  echo $pagination;?>
+    <?php  //echo $pagination;?>
+    <?php
+    $pagination = $list->getPagination();
+    if ($pagination->getTotalPages() > 1) {
+        $options = array(
+            'prev_message' => t('Previous'),
+            'next_message' => t('Next'),
+            'css_container_class' => 'st-pagination pagination',
+        );
+        echo $pagination->renderDefaultView($options);
+    }
+    ?>
 <?php  endif; ?>
 
 <?php  if ( $c->isEditMode() && $controller->isBlockEmpty()): ?>
