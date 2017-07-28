@@ -1,20 +1,35 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Theme Stucco\n"
-"POT-Creation-Date: 2016-02-12 10:37+0900\n"
-"PO-Revision-Date: 2016-02-12 10:37+0900\n"
+"POT-Creation-Date: 2017-06-27 17:12+0900\n"
+"PO-Revision-Date: 2017-06-27 17:31+0900\n"
 "Last-Translator: \n"
 "Language-Team: nipper.onside@gmail.com\n"
 "Language: ja_JP\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Poedit 1.5.7\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;t\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SearchPath-0: ../../..\n"
+
+#: ../../../controller.php:21
+#: ../../../blocks/express_entry_list/templates/stucco_express_entry_list/view.php:1
+#: ../../../blocks/express_entry_list/templates/stucco_express_entry_list_sidebar/view.php:1
+#: ../../../elements/dashboard/install.php:1
+msgid "Access Denied."
+msgstr "アクセスできません。"
+
+#: ../../../controller.php:39
+msgid "A simple style business theme based on the Bootstrap framework."
+msgstr "ブートストラップを使用したシンプルなビジネステーマ。"
+
+#: ../../../controller.php:44
+msgid "Stucco"
+msgstr "Stucco"
 
 #: ../../../blocks/autonav/templates/stucco_bread_crumbs/view.php:26
 #: ../../../blocks/autonav/templates/stucco_footer_nav/view.php:135
@@ -22,12 +37,35 @@ msgstr ""
 msgid "Empty Auto-Nav Block."
 msgstr "空のオートナビブロックです。"
 
+#: ../../../blocks/express_entry_list/templates/stucco_express_entry_list/view.php:22
+#: ../../../blocks/express_entry_list/templates/stucco_express_entry_list_sidebar/view.php:22
+msgid "Keyword Search"
+msgstr "キーワード検索"
+
+#: ../../../blocks/express_entry_list/templates/stucco_express_entry_list/view.php:25
+#: ../../../blocks/express_entry_list/templates/stucco_express_entry_list_sidebar/view.php:25
+#: ../../../themes/stucco/page_not_found.php:17
+#: ../../../themes/stucco/page_not_found.php:18
+msgid "Search"
+msgstr "検索"
+
+#: ../../../blocks/express_entry_list/templates/stucco_express_entry_list/view.php:28
+#: ../../../blocks/express_entry_list/templates/stucco_express_entry_list_sidebar/view.php:28
+msgid "Advanced Search"
+msgstr "詳細検索"
+
+#: ../../../blocks/express_entry_list/templates/stucco_express_entry_list/view.php:135
+#: ../../../blocks/express_entry_list/templates/stucco_express_entry_list_sidebar/view.php:137
+#, php-format
+msgid "No \"%s\" entries can be found"
+msgstr "%s のエントリーが見つかりませんでした"
+
 #: ../../../blocks/faq/templates/stucco_faq/view.php:23
 #: ../../../blocks/faq/templates/stucco_q&a/view.php:24
 msgid "No Faq Entries Entered."
 msgstr "FAQ のエントリーが入力されていません。"
 
-#: ../../../blocks/form/templates/stucco_simple_form/view.php:104
+#: ../../../blocks/form/templates/stucco_simple_form/view.php:112
 #: ../../../blocks/stucco_description_list_block/form.php:10
 #: ../../../blocks/stucco_description_list_block/form.php:33
 #: ../../../blocks/stucco_description_list_block/form.php:56
@@ -49,6 +87,14 @@ msgstr "Y年n月j日"
 #: ../../../blocks/page_list/templates/stucco_news_list/view.php:76
 msgid "No announcements to this news."
 msgstr "このニュースにお知らせはありません。"
+
+#: ../../../blocks/page_list/templates/stucco_news_list/view.php:93
+msgid "Previous Page"
+msgstr "前のページ"
+
+#: ../../../blocks/page_list/templates/stucco_news_list/view.php:94
+msgid "Next Page"
+msgstr "次のページ"
 
 #: ../../../blocks/search/templates/stucco_header_search/view.php:35
 msgid "There were no results found. Please try another keyword or phrase."
@@ -190,18 +236,6 @@ msgstr "ドット・アンダーライン"
 msgid "All"
 msgstr "すべて"
 
-#: ../../../controller.php:12 ../../../elements/dashboard/install.php:1
-msgid "Access Denied."
-msgstr "アクセスできません。"
-
-#: ../../../controller.php:24
-msgid "A simple style business theme based on the Bootstrap framework."
-msgstr "ブートストラップを使用したシンプルなビジネステーマ。"
-
-#: ../../../controller.php:29
-msgid "Stucco"
-msgstr "Stucco"
-
 #: ../../../elements/dashboard/install.php:4
 msgid ""
 "<strong>Attention!</strong> Clearing your site's content prior to installing "
@@ -226,22 +260,6 @@ msgstr "ログイン"
 msgid "Log out"
 msgstr "ログアウト"
 
-#: ../../../themes/stucco/inc/footer.php:32
-msgid "Back to Top"
-msgstr "ページの先頭へ"
-
-#: ../../../themes/stucco/inc/header_top.php:21
-msgid ""
-"You are using an <strong>outdated</strong> browser. Please <a href=\"http://"
-"browsehappy.com/\">upgrade your browser</a> to improve your experience."
-msgstr ""
-"You are using an <strong>outdated</strong> browser. Please <a href=\"http://"
-"browsehappy.com/\">upgrade your browser</a> to improve your experience."
-
-#: ../../../themes/stucco/inc/header_top.php:24
-msgid "Skip to content"
-msgstr "コンテンツへ移動"
-
 #: ../../../themes/stucco/page_forbidden.php:12
 msgid "403 Error"
 msgstr "403エラー"
@@ -258,50 +276,61 @@ msgstr "404エラー"
 msgid "Page not found, so please search."
 msgstr "ページが見つかりません、検索してみてください。"
 
-#: ../../../themes/stucco/page_not_found.php:17
-#: ../../../themes/stucco/page_not_found.php:18
-msgid "Search"
-msgstr "検索"
-
-#: ../../../themes/stucco/page_theme.php:113
+#: ../../../themes/stucco/page_theme.php:117
 msgid "Title Thin"
 msgstr "細いタイトル"
 
-#: ../../../themes/stucco/page_theme.php:118
+#: ../../../themes/stucco/page_theme.php:122
 msgid "Title Bold"
 msgstr "タイトル 太字"
 
-#: ../../../themes/stucco/page_theme.php:123
+#: ../../../themes/stucco/page_theme.php:127
 msgid "Title Caps"
 msgstr "大文字タイトル"
 
-#: ../../../themes/stucco/page_theme.php:128
+#: ../../../themes/stucco/page_theme.php:132
 msgid "Headline"
 msgstr "大見出し"
 
-#: ../../../themes/stucco/page_theme.php:133
+#: ../../../themes/stucco/page_theme.php:137
 msgid "Subhead"
 msgstr "小見出し"
 
-#: ../../../themes/stucco/page_theme.php:138
+#: ../../../themes/stucco/page_theme.php:142
 msgid "Image Caption"
 msgstr "画像キャプション"
 
-#: ../../../themes/stucco/page_theme.php:143
+#: ../../../themes/stucco/page_theme.php:147
 msgid "Standard Button"
 msgstr "標準ボタン"
 
-#: ../../../themes/stucco/page_theme.php:148
+#: ../../../themes/stucco/page_theme.php:152
 msgid "Success Button"
 msgstr "OKボタン"
 
-#: ../../../themes/stucco/page_theme.php:153
+#: ../../../themes/stucco/page_theme.php:157
 msgid "Primary Button"
 msgstr "重要なボタン"
 
-#: ../../../themes/stucco/page_theme.php:158
+#: ../../../themes/stucco/page_theme.php:162
 msgid "Link Mark"
 msgstr "リンクマーク"
+
+#: ../../../themes/stucco/inc/footer.php:37
+msgid "Back to Top"
+msgstr "ページの先頭へ"
+
+#: ../../../themes/stucco/inc/header_top.php:27
+msgid ""
+"You are using an <strong>outdated</strong> browser. Please <a href=\"http://"
+"browsehappy.com/\">upgrade your browser</a> to improve your experience."
+msgstr ""
+"You are using an <strong>outdated</strong> browser. Please <a href=\"http://"
+"browsehappy.com/\">upgrade your browser</a> to improve your experience."
+
+#: ../../../themes/stucco/inc/header_top.php:30
+msgid "Skip to content"
+msgstr "コンテンツへ移動"
 
 #~ msgid "This is an ahchor point (ID: anchor-%s)"
 #~ msgstr "これはアンカー ポイントです (ID: anchor-%s)"
