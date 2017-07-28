@@ -119,4 +119,38 @@ div.ccm-pagination-wrapper {
 			}
 		}
 	}
+
+	.st-pagination {
+		&.pagination {
+
+			> li {
+
+				&.next {
+					a,
+					span {
+						padding-right: 24px;
+						&:after {
+							background: none;
+							position: absolute;
+							top: .3em;
+							right: .2px;
+						}
+					}
+
+				}
+				&.prev {
+					a,
+					span {
+						padding-left: 24px;
+						&:before {
+							background: none;
+							position: absolute;
+							top: .3em;
+							left: .2px;
+						}
+					}
+				}
+			}
+		}
+	}
 }
