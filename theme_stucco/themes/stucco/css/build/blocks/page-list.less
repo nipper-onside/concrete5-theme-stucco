@@ -141,10 +141,12 @@
 	}
 }
 
-.ccm-block-page-list-page-entry {
+.ccm-block-page-list-page-entry,
+.ccm-block-page-list-page-entry-horizontal {
 	a {
 		&.ccm-block-page-list-read-more {
 			display: inline-block;
+			margin-top: 15px;
 			padding: 10px 30px 10px 30px;
 			color: @body-link-color;
 			border: 1px solid @body-link-color;
@@ -203,7 +205,8 @@
 
 }
 
-.ccm-block-page-list-page-entry {
+.ccm-block-page-list-page-entry,
+.ccm-block-page-list-page-entry-horizontal {
 
 	.ccm-block-page-list-page-entry-text {
     	margin: 0 0 50px;
@@ -211,6 +214,7 @@
     	.ccm-block-page-list-title {
 			margin-bottom: 5px;
 			font-size: @h4-type-font-size;
+			font-weight: 700;
 
 			a {
 				color: @body-link-hover-color;
@@ -226,6 +230,11 @@
 			color: @body-link-color;
 			font-size: .9em;
 		}
+
+	}
+
+	.ccm-block-page-list-page-entry-thumbnail {
+		margin-bottom: 10px;
 	}
 
 }
