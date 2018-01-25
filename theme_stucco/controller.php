@@ -31,7 +31,7 @@ class Controller extends Package
 
 	protected $pkgHandle = 'theme_stucco';
 	protected $appVersionRequired = '5.7.5';
-	protected $pkgVersion = '2.1.3';
+	protected $pkgVersion = '2.1.4';
 	protected $pkgAllowsFullContentSwap = true;
 
 	public function getPackageDescription()
