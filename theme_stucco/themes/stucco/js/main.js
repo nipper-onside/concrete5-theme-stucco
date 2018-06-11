@@ -3,8 +3,8 @@
 	Theme Name: Stucco
 	Website Designed and developed by www.onside.com
 	Author: Shin'ichi Nakane
-	Description: Common JavaScript 08-08-2015 (mm-dd-yyyy)
-	Version: 1.0
+	Description: Common JavaScript 06-11-2018 (mm-dd-yyyy)
+	Version: 1.1
 
 ----------------------------------------------*/
 
@@ -254,7 +254,7 @@ $(function(){
 });
 
 $(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
