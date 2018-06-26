@@ -839,6 +839,7 @@
 	                                <title><![CDATA[Search]]></title>
 	                                <buttonText><![CDATA[Search]]></buttonText>
 	                                <baseSearchPath><![CDATA[]]></baseSearchPath>
+	                                <resultsPageKind><![CDATA[CID]]></resultsPageKind>
 	                                <postTo_cID>{ccm:export:page:/search}</postTo_cID>
 	                                <resultsURL><![CDATA[]]></resultsURL>
 	                              </record>
@@ -1325,6 +1326,7 @@
 	                <title><![CDATA[]]></title>
 	                <buttonText><![CDATA[Search]]></buttonText>
 	                <baseSearchPath><![CDATA[]]></baseSearchPath>
+	                <resultsPageKind><![CDATA[CID]]></resultsPageKind>
 	                <postTo_cID>{ccm:export:page:/search}</postTo_cID>
 	                <resultsURL><![CDATA[]]></resultsURL>
 	              </record>
