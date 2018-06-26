@@ -53,7 +53,6 @@ $c = Page::getCurrentPage();
 /*** STEP 1 of 2: Determine all CSS classes (only 2 are enabled by default, but you can un-comment other ones or add your own) ***/
 
 $niCount = count($navItems);
-$niCountSub = count($navItems->hasSubmenu);
 
 foreach ($navItems as $ni) {
 
@@ -129,7 +128,7 @@ foreach ($navItems as $ni) {
 							<span class="animenu__toggle__bar"></span>
 						</button>
 					</div>
-<?php 
+<?php
 if ($niCount > 0) {
 
 	echo '<ul class="animenu__nav">';
@@ -154,7 +153,7 @@ if ($niCount > 0) {
 		</div>
 	</div>
 
-<?php 
+<?php
 } else if (is_object($c) && $c->isEditMode()) { ?>
     <div class="ccm-edit-mode-disabled-item"><?php  echo t('Empty Auto-Nav Block.')?></div>
 
